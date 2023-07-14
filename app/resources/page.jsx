@@ -6,7 +6,10 @@ import CardSection from "@components/CardSection";
 const ResourcesPage = () => {
   return (
     <>
-      <ResourceTopSection text="this is the resources page" />
+      <ResourceTopSection
+        text="this is the resources page"
+        RActiveStyle="c-active"
+      />
       <CardSection />
     </>
   );

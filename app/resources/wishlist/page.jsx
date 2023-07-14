@@ -6,7 +6,10 @@ import ResourceTopSection from "@components/ResourceTopSection";
 const WishListPage = () => {
   return (
     <>
-      <ResourceTopSection text="this is wishlist pages" />
+      <ResourceTopSection
+        text="this is wishlist pages"
+        WActiveStyle="c-active"
+      />
       <section className="order-bg">
         <div className="form-container">
           <div className="logo-container">

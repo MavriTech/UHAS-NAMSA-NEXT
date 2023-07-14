@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const ResourceTopSection = (props) => {
-  const { text } = props;
+  const { text, RActiveStyle, CActiveStyle, WActiveStyle } = props;
   return (
     <>
       <section className="top-section">
@@ -66,13 +66,13 @@ const ResourceTopSection = (props) => {
             <h2>namsa-learn</h2>
           </div>
           <div className="mid-components">
-            <span className="c-active">
+            <span className={RActiveStyle}>
               <Link href="/resources">Resources</Link>
             </span>
-            <span>
+            <span className={CActiveStyle}>
               <Link href="/resources/courses">Courses</Link>
             </span>
-            <span>
+            <span className={WActiveStyle}>
               <Link href="/resources/wishlist">Wishlist</Link>
             </span>
           </div>
@@ -104,7 +104,7 @@ const ResourceTopSection = (props) => {
           </div>
         </div>
       </section>
-      <section className="card-section" id="cardSection"></section>
+      {/* <section className="card-section" id="cardSection"></section> */}
     </>
   );
 };

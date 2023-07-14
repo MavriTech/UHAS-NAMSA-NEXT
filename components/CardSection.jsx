@@ -285,7 +285,7 @@ const CardSection = () => {
     };
   }, []);
 
-  return null; //<section class="card-section" id="cardSection"></section>;
+  return <section class="card-section" id="cardSection"></section>;
 };
 
 export default CardSection;
