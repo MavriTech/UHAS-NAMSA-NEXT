@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* styling for the leaders section begins */
+.leaders {
+  width: 100%;
+}
+.leaders h1 {
+  font-weight: 700;
+  font-size: 35px;
+  text-align: center;
+  color: #4a6985;
+  margin: 10px 0;
+}
+
+.leaders .executives {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 50px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+}
+.leaders .executives .executive {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.executives .profile-details {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 250px;
+  height: 330px;
+}
+.executives .profile-details .profile-image {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  border-radius: 50%;
+}
+.executives .profile-details .profile-image .profile-image-shadow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+
+}
+.executives .profile-details .profile-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.position {
+  font-weight: 500;
+  font-size: 20px;
+  font-family: Montserrat;
+}
+.profile-details .executive-social-icons {
+  position: absolute;
+  bottom: 23%;
+  height: 24.06px;
+  background: #ffffff33;
+}
+.profile-details .executive-social-icons a {
+  text-decoration: none;
+}
+.profile-details .executive-social-icons img {
+  height: 22px;
+  width: 22px;
+  margin: 0 5px;
+}
+.executives .profile-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 60%;
+  height: 300px;
+}
+.executives .profile-description span {
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: -20px;
+}
+.executives .profile-description p {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.executives .divider {
+  position: absolute;
+  left: 34%;
+  height: 100%;
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.executives .star {
+  position: absolute;
+  left: 33%;
+  bottom: 5%;
+}
+.executives .star img {
+  width: 1.3rem;
+}
+
+@media only screen and (max-width: 476px) {
+  .leaders h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .leaders .executives {
+    width: 100%;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+  }
+  .executives .profile-details {
+    width: 80px;
+    height: 130px;
+  }
+  .executives .profile-details .profile-image {
+    width: 100%;
+    height: 80px;
+    border-radius: 50%;
+  }
+  .executives .profile-details .profile-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .executives .profile-details .position {
+    font-weight: 500;
+    font-size: 9px;
+    text-align: center;
+    font-family: Montserrat;
+    width: 100px;
+  }
+  .profile-details .executive-social-icons {
+    position: absolute;
+    bottom: 20%;
+    height: 20px;
+    width: 80px;
+    background: #ffffff33;
+  }
+
+  .profile-details .executive-social-icons img {
+    height: 12px;
+    width: 15px;
+  }
+  .executives .profile-description {
+    height: 200px;
+  }
+  .executives .profile-description span {
+    font-family: Montserrat;
+    font-size: 13px;
+    margin-top: 0px;
+  }
+  .executives .profile-description p {
+    font-family: Montserrat;
+    font-size: 8px;
+  }
+
+  .executives .star img {
+    width: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 476px) and (max-width: 578px) {
+  .leaders {
+    padding-top: 50px;
+  }
+  .leaders h1 {
+    font-size: 23px;
+    text-align: center;
+  }
+
+  .leaders .executives {
+    width: 90%;
+    padding: 10px 40px;
+    margin-bottom: 20px;
+  }
+  .executives .profile-details {
+    width: 100px;
+    height: 150px;
+  }
+  .executives .profile-details .profile-image {
+    width: 100%;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .executives .profile-details .profile-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .executives .profile-details .position {
+    font-weight: 500;
+    font-size: 9px;
+    text-align: center;
+    font-family: Montserrat;
+    width: 100px;
+  }
+  .profile-details .executive-social-icons {
+    position: absolute;
+    bottom: 20%;
+    height: 20px;
+    width: 80px;
+    background: #ffffff33;
+  }
+
+  .profile-details .executive-social-icons img {
+    height: 12px;
+    width: 15px;
+  }
+  .executives .profile-description {
+    height: 180px;
+  }
+  .executives .profile-description span {
+    font-family: Montserrat;
+    font-size: 15px;
+    margin-top: 0px;
+  }
+  .executives .profile-description p {
+    font-family: Montserrat;
+    font-size: 8px;
+  }
+
+  .executives .star img {
+    width: 0.5rem;
+  }
+}
+
+@media (min-width: 579px) and (max-width: 730px) {
+  .leaders h1 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .leaders .executives {
+    width: 100%;
+    padding: 15px 40px;
+    margin-bottom: 20px;
+  }
+  .executive {
+    width: 90%;
+  }
+  .executives .profile-details {
+    width: 120px;
+    height: 170px;
+  }
+  .executives .profile-details .profile-image {
+    width: 100%;
+    height: 120px;
+    border-radius: 50%;
+  }
+  .executives .profile-details .profile-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .executives .profile-details .position {
+    font-weight: 500;
+    font-size: 11px;
+    text-align: center;
+    font-family: Montserrat;
+  }
+  .profile-details .executive-social-icons {
+    position: absolute;
+    bottom: 20%;
+    height: 20px;
+    width: 100px;
+    background: #ffffff33;
+  }
+
+  .profile-details .executive-social-icons img {
+    height: 14px;
+    width: 16px;
+  }
+  .executives .profile-description {
+    height: 200px;
+  }
+  .executives .profile-description span {
+    font-family: Montserrat;
+    font-size: 15px;
+    margin-top: 0px;
+  }
+  .executives .profile-description p {
+    font-family: Montserrat;
+    font-size: 10px;
+  }
+  .executives .star {
+    position: absolute;
+    left: 33.2%;
+    bottom: 5%;
+  }
+  .executives .star img {
+    width: 0.6rem;
+  }
+}
+@media only screen and (min-width: 731px) and (max-width: 992px) {
+  .leaders h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .leaders .executives {
+    width: 100%;
+    padding: 15px 40px;
+    margin-bottom: 20px;
+  }
+  .executive {
+    width: 90%;
+    padding: 0 20px;
+  }
+  .executives .profile-details {
+    width: 120px;
+    height: 170px;
+  }
+  .executives .profile-details .profile-image {
+    width: 100%;
+    height: 120px;
+    border-radius: 50%;
+  }
+  .executives .profile-details .profile-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .executives .profile-details .position {
+    font-weight: 500;
+    font-size: 11px;
+    text-align: center;
+    font-family: Montserrat;
+  }
+  .profile-details .executive-social-icons {
+    position: absolute;
+    bottom: 20%;
+    height: 20px;
+    width: 100px;
+    background: #ffffff33;
+  }
+
+  .profile-details .executive-social-icons img {
+    height: 14px;
+    width: 16px;
+  }
+  .executives .profile-description {
+    height: 200px;
+  }
+  .executives .profile-description span {
+    font-family: Montserrat;
+    font-size: 17px;
+    margin-top: 0px;
+  }
+  .executives .profile-description p {
+    font-family: Montserrat;
+    font-size: 12px;
+  }
+  .executives .star {
+    position: absolute;
+    left: 33.2%;
+    bottom: 5%;
+  }
+  .executives .star img {
+    width: 0.6rem;
+  }
+}
