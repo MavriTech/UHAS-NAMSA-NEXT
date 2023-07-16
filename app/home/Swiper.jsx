@@ -18,6 +18,9 @@ export default function Home_Swiper() {
   return (
     <>
       <Swiper
+        // onInit={() => {
+        //   this.activeSlide = 2;
+        // }}
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
@@ -26,7 +29,7 @@ export default function Home_Swiper() {
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
-          depth: 130,
+          depth: 135,
           modifier: 1,
           slideShadows: false,
         }}
