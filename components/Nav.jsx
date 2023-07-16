@@ -82,7 +82,7 @@ const Nav = () => {
             <div className="navlinks">
               <ul>
                 <li className="navlink-content droplink">
-                  <a href="/components/resource.html" id="resources">
+                  <a href="/resources" id="resources">
                     RESOURCES
                     <i className="fa-solid fa-caret-down drop-icon"></i>
                   </a>
