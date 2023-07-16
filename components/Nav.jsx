@@ -65,7 +65,7 @@ const Nav = () => {
               <div className="dropdown">
                 <ul className="dropdown-content">
                   <li className="dropdown-links">
-                    <a href="/components/sports.html">Sports</a>
+                    <a href="/events/sports">Sports</a>
                   </li>
                   <li className="dropdown-links">
                     <a href="#">Picnics</a>
@@ -116,7 +116,7 @@ const Nav = () => {
               <div className="dropdown">
                 <ul className="dropdown-content">
                   <li className="dropdown-links">
-                    <a href="./app/leadership/page.jsx">Executives</a>
+                    <a href="/leadership">Executives</a>
                   </li>
                   <li className="dropdown-links">
                     <a href="#">Facts and Figures</a>

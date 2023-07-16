@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "@components/Nav";
 import Footer from "@components/Footer";
+import '@styles/home-slider.css'
 import "@styles/sports.css";
 
 export const metadata = {

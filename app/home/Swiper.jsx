@@ -18,9 +18,6 @@ export default function Home_Swiper() {
   return (
     <>
       <Swiper
-        // onInit={() => {
-        //   this.activeSlide = 2;
-        // }}
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
@@ -54,7 +51,7 @@ export default function Home_Swiper() {
         </div>
         `
         <div className="swiper-wrapper">
-          <SwiperSlide>
+          <SwiperSlide className="swiper-slide ">
             <img src="\images\akwaba_img\WhatsApp Image 2023-06-02 at 11.53.31 PM (1).jpeg" />
             <h2>THE HISTORY OF NURSING</h2>
             <p>
@@ -66,7 +63,7 @@ export default function Home_Swiper() {
         </div>
         `
         <div className="swiper-wrapper">
-          <SwiperSlide>
+          <SwiperSlide className="swiper-slide ">
             <img src="\images\akwaba_img\WhatsApp Image 2023-06-02 at 11.53.28 PM.jpeg" />
             <h2>THE HISTORY OF NURSING</h2>
             <p>
@@ -77,7 +74,7 @@ export default function Home_Swiper() {
           </SwiperSlide>
         </div>
         <div className="swiper-wrapper">
-          <SwiperSlide>
+          <SwiperSlide className="swiper-slide ">
             <img src="\images\akwaba_img\WhatsApp Image 2023-06-02 at 11.53.28 PM (1).jpeg" />
             <h2>THE HISTORY OF NURSING</h2>
             <p>
@@ -88,7 +85,7 @@ export default function Home_Swiper() {
           </SwiperSlide>
         </div>
         <div className="swiper-wrapper">
-          <SwiperSlide>
+          <SwiperSlide className="swiper-slide ">
             <img src="\images\akwaba_img\WhatsApp Image 2023-06-02 at 11.53.29 PM.jpeg" />
             <h2>THE HISTORY OF NURSING</h2>
             <p>
