@@ -1232,3 +1232,46 @@ body {
 }
 
 /* responsiveness for big screen tabs and medium screen laptops ends*/
+:root {
+  --font-green-text: #008800;
+  --grey-background: #dee1e6b3;
+  --white: #ffffff;
+  --nav-background-color: #e8eaee;
+  --header-one-color: #4a6985;
+  --yellow-bg: #e3e725;
+  --box-shadow: 0 0 5px #b3b2b2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-image: url(/images/background.png);
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.whole-content {
+  max-width: 1214px;
+  margin: 2rem auto;
+  padding-top: 8%;
+  background-color: #fff;
+}

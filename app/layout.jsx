@@ -1,27 +1,25 @@
-import Nav from "@components/Nav";
 import Footer from "@components/Footer";
+import Nav from "@components/Nav";
 import "@styles/globals.css";
-import Head from "next/head";
 
 export const metadata = {
-  title: "Home-NAMSA",
-  description: "Nursing and Midwifery Student's Association",
+  title: "UHAS-NAMSA",
+  description: "Discover variety of food stuff",
 };
 
 const RootLayout = ({ children }) => {
   return (
-    <html lang="en">
-      <Head />
-
-      <body>
-        <div className="main-container">
-          {" "}
-          <Nav />
-          {children}
-          <Footer />
-        </div>
-      </body>
-    </html>
+    <>
+      <html lang="en">
+        <body>
+          <main className="whole-content">
+            <Nav />
+            {children}
+            <Footer />
+          </main>
+        </body>
+      </html>
+    </>
   );
 };
 
