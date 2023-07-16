@@ -1,0 +1,733 @@
+/* Mission and Vision Section begins */
+.aim-section {
+    width: 80%;
+    height: 600px;
+    margin: 20px auto;
+  }
+  .aim-section .aim-title {
+    width: 100%;
+    height: 76px;
+  }
+  .aim-section h2 {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: #4a6985;
+  }
+  .aim-section .aim {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    margin-top: 50px;
+  }
+  .aim-section .aim .mission-box {
+    position: relative;
+    width: 45%;
+    height: 400px;
+    border-radius: 50px;
+    background: #d9d9d9;
+    box-shadow: 3px 3px 6px rgba(87, 86, 86, 0.524);
+  }
+  .aim-section .aim .mission-box hr {
+    width: 100%;
+    height: 50px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    background: #6c6d29;
+    border: none;
+  }
+  
+  .aim .mission-box .mission-content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .aim .mission-box .mission-content .mission-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 200px;
+    margin-top: 20px;
+  }
+  .mission-box .mission-content .mission-header img {
+    width: 70px;
+    height: 60px;
+  }
+  
+  .aim .mission-box .mission-content .mission-header h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 61px;
+    color: #3a3a3a;
+  }
+  
+  .aim .mission-box .mission-content .mission {
+    width: 300px;
+    margin: 40px 0;
+  }
+  .aim .mission-box .mission-content .mission p {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 49px;
+    text-align: justify;
+    margin-top: 30px;
+    color: #3a3a3a;
+  }
+  
+  .mission-box .empty-mission-style {
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    width: 113%;
+    height: 250px;
+    border: 8px solid #6c6d29;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top: none;
+  }
+  .mission-box .left-mission-style {
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    height: 8px;
+    width: 120px;
+    background: #6c6d29;
+  }
+  .mission-box .left-circle {
+    position: absolute;
+    top: 47%;
+    left: 80px;
+    width: 32px;
+    height: 28px;
+    border-radius: 50%;
+    background: #6c6d29;
+  }
+  .mission-box .right-circle {
+    position: absolute;
+    top: 47%;
+    right: -30px;
+    width: 32px;
+    height: 28px;
+    border-radius: 50%;
+    background: #6c6d29;
+  }
+  
+  .aim-section .vision-box {
+    position: relative;
+    width: 45%;
+    height: 400px;
+    border-radius: 50px;
+    background: #d9d9d9;
+    /* overflow: hidden; */
+    margin-left: 30px;
+    box-shadow: 3px 3px 6px rgba(87, 86, 86, 0.524);
+  }
+  .aim-section .vision-box hr {
+    width: 100%;
+    height: 50px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    background: #4a6985;
+    border: none;
+  }
+  .aim-section .vision-box .vision-content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .vision-box .vision-content .vision-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70px;
+    width: 200px;
+    margin-top: 20px;
+  }
+  .vision-box .vision-content .vision-header img {
+    width: 60px;
+    height: 60px;
+  }
+  .vision-box .vision-content .vision-header h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 61px;
+    color: #3a3a3a;
+  }
+  .vision-box .vision-content .vision {
+    width: 300px;
+    margin: 40px 0;
+  }
+  .vision-box .vision-content .vision p {
+    font-weight: 400;
+    font-size:30px;
+    line-height: 49px;
+    text-align: justify;
+    margin-top: 30px;
+    color: #3a3a3a;
+  }
+  .vision-box .empty-vision-style {
+    position: absolute;
+    right: -30px;
+    bottom: 50%;
+    width: 113%;
+    height: 250px;
+    border: 8px solid #4a6985;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom: none;
+  }
+  .vision-box .right-vision-style {
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    height: 8px;
+    width: 120px;
+    background: #4a6985;
+  }
+  .vision-box .left-circle {
+    position: absolute;
+    top: 47%;
+    left: -30px;
+    width: 32px;
+    height: 28px;
+    border-radius: 50%;
+    background: #4a6985;
+  }
+  .vision-box .right-circle {
+    position: absolute;
+    top: 47%;
+    right: 80px;
+    width: 32px;
+    height: 28px;
+    border-radius: 50%;
+    background: #4a6985;
+  }
+  
+  /* media queries for mission section */
+@media only screen and (max-width: 576px) {
+    .aim-section {
+      width: 100%;
+      height: 300px;
+    }
+    .aim-section .aim-title {
+      width: 100%;
+      height: 50px;
+    }
+    .aim-section h2 {
+      font-weight: 700;
+      font-size: 18px;
+    }
+    .aim-section .aim {
+      width: 100%;
+      height: 80%;
+      padding: 20px;
+      margin-top: 10px;
+    }
+    .aim-section .aim .mission-box {
+      position: relative;
+      width: 200px;
+      height: 180px;
+      border-radius: 20px;
+    }
+    .aim-section .aim .mission-box hr {
+      width: 100%;
+      height: 20px;
+    }
+    .aim .mission-box .mission-content .mission-header {
+      height: 40px;
+      width: 75%;
+      margin-top: 10px;
+    }
+    .mission-box .mission-content .mission-header img {
+      width: 25px;
+      height: 25px;
+    }
+  
+    .aim .mission-box .mission-content .mission-header h3 {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  
+    .aim .mission-box .mission-content .mission {
+      width: 85%;
+      margin: 10px 0;
+    }
+    .aim .mission-box .mission-content .mission p {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+      margin-top: 10px;
+    }
+    .mission-box .empty-mission-style {
+      position: absolute;
+      left: -9%;
+      top: 45%;
+      width: 118%;
+      height: 120px;
+      border: 3px solid #6c6d29;
+      border-top: none;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    .mission-box .left-mission-style {
+      position: absolute;
+      top: 45%;
+      left: -9%;
+      height: 3px;
+      width: 40px;
+      background: #6c6d29;
+    }
+    .mission-box .left-circle {
+      position: absolute;
+      top: 43%;
+      left: 15%;
+      width: 12px;
+      height: 10px;
+      border-radius: 50%;
+    }
+    .mission-box .right-circle {
+      position: absolute;
+      top: 43%;
+      right: -8%;
+      width: 12px;
+      height: 10px;
+    }
+  }
+  /* media queries for mission section end*/
+  
+  /* media queries for vision section */
+  @media only screen and (max-width: 576px) {
+    .aim-section .aim .vision-box {
+      position: relative;
+      width: 200px;
+      height: 180px;
+      border-radius: 20px;
+    }
+    .aim-section .aim .vision-box hr {
+      width: 100%;
+      height: 20px;
+    }
+    .aim .vision-box .vision-content .vision-header {
+      height: 40px;
+      width: 75%;
+      margin-top: 10px;
+    }
+    .vision-box .vision-content .vision-header img {
+      width: 25px;
+      height: 25px;
+    }
+  
+    .aim .vision-box .vision-content .vision-header h3 {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  
+    .aim .vision-box .vision-content .vision {
+      width: 85%;
+      margin: 10px 0;
+    }
+    .aim .vision-box .vision-content .vision p {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+      margin-top: 10px;
+    }
+    .vision-box .empty-vision-style {
+      position: absolute;
+      left: -9%;
+      bottom: 50%;
+      width: 118%;
+      height: 110px;
+      border: 3px solid #4a6985;
+      border-bottom: none;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+    .vision-box .right-vision-style {
+      position: absolute;
+      bottom: 45%;
+      left: -9%;
+      height: 3px;
+      width: 40px;
+      background: #4a6985;
+    }
+    .vision-box .left-circle {
+      position: absolute;
+      top: 48%;
+      left: 15%;
+      width: 12px;
+      height: 10px;
+      border-radius: 50%;
+    }
+    .vision-box .right-circle {
+      position: absolute;
+      top: 46%;
+      right: -8%;
+      width: 12px;
+      height: 10px;
+    }
+  }
+  /* media queries for vision section end*/
+
+  @media only screen and (min-width: 600px) and (max-width: 768px) {
+    .aim-section {
+      width: 100%;
+      padding: 20px;
+    }
+    .aim-section .aim-title {
+      width: 100%;
+      height: 50px;
+    }
+    .aim-section h2 {
+      font-weight: 700;
+      font-size: 25px;
+    }
+    .aim-section .aim {
+      width: 100%;
+      height: 85%;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    .aim-section .aim .mission-box {
+      position: relative;
+      width: 45%;
+      height: 300px;
+    }
+    .aim-section .aim .mission-box hr {
+      width: 100%;
+      height: 35px;
+    }
+    .aim .mission-box .mission-content {
+      width: 100%;
+    }
+    .aim .mission-box .mission-content .mission-header {
+      height: 50px;
+      width: 60%;
+      margin: 15px auto;
+    }
+    .mission-box .mission-content .mission-header img {
+      width: 60px;
+      height: 50px;
+    }
+  
+    .aim .mission-box .mission-content .mission-header h3 {
+      font-weight: 700;
+      font-size: 30px;
+    }
+  
+    .aim .mission-box .mission-content .mission {
+      width: 300px;
+      margin: 5px 0;
+    }
+    .aim .mission-box .mission-content .mission p {
+      width: 80%;
+      font-weight: 400;
+      font-size: 20px;
+      padding: 10px;
+      margin: 20px auto;
+    }
+    .mission-box .empty-mission-style {
+      position: absolute;
+      left: -5%;
+      top: 49%;
+      width: 110%;
+      height: 200px;
+      border: 5px solid #6c6d29;
+      border-top: none;
+    }
+    .mission-box .left-mission-style {
+      position: absolute;
+      top: 49%;
+      left: -5%;
+      height: 5px;
+      width: 80px;
+    }
+    .mission-box .left-circle {
+      position: absolute;
+      top: 47%;
+      left: 50px;
+      width: 20px;
+      height: 18px;
+      border-radius: 50%;
+      background: #6c6d29;
+    }
+    .mission-box .right-circle {
+      position: absolute;
+      top: 47%;
+      right: -18px;
+      width: 20px;
+      height: 18px;
+    }
+  }
+  
+  @media only screen and (min-width: 600px) and (max-width: 768px) {
+    .aim-section .aim .vision-box {
+      position: relative;
+      width: 45%;
+      height: 300px;
+    }
+    .aim-section .aim .vision-box hr {
+      width: 100%;
+      height: 35px;
+    }
+    .aim .vision-box .vision-content {
+      width: 100%;
+    }
+    .aim .vision-box .vision-content .vision-header {
+      height: 50px;
+      width: 60%;
+      margin: 15px auto;
+    }
+    .vision-box .vision-content .vision-header img {
+      width: 60px;
+      height: 50px;
+    }
+  
+    .aim .vision-box .vision-content .vision-header h3 {
+      font-weight: 700;
+      font-size: 30px;
+    }
+  
+    .aim .vision-box .vision-content .vision {
+      width: 300px;
+      margin: 5px 0;
+    }
+    .aim .vision-box .vision-content .vision p {
+      width: 80%;
+      font-weight: 400;
+      font-size: 20px;
+      padding: 10px;
+      margin: 20px auto;
+    }
+    .vision-box .empty-vision-style {
+      position: absolute;
+      left: -5%;
+      bottom: 49%;
+      width: 110%;
+      height: 200px;
+      border: 5px solid #4c6885;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      border-bottom: none;
+    }
+    .vision-box .right-vision-style {
+      position: absolute;
+      top: 50%;
+      right: -5%;
+      height: 5px;
+      width: 80px;
+    }
+    .vision-box .left-circle {
+      position: absolute;
+      top: 47%;
+      left: -13px;
+      width: 20px;
+      height: 18px;
+      border-radius: 50%;
+    }
+    .vision-box .right-circle {
+      position: absolute;
+      top: 48%;
+      right: 48px;
+      width: 20px;
+      height: 18px;
+    }
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 992px) {
+    .aim-section {
+      width: 95%;
+      height: 450px;
+    }
+    .aim-section .aim-title {
+      width: 100%;
+      height: 40px;
+    }
+    .aim-section h2 {
+      font-size: 30px;
+    }
+    .aim-section .aim {
+      width: 100%;
+      height: 400px;
+      padding: 10px;
+      margin-top: 40px;
+    }
+  }
+  
+  @media only screen and (min-width: 769px) and (max-width: 992px) {
+    .aim-section .aim .mission-box {
+      position: relative;
+      width: 45%;
+      height: 300px;
+      border-radius: 40px;
+    }
+    .aim-section .aim .mission-box hr {
+      width: 100%;
+      height: 40px;
+    }
+  
+    .aim .mission-box .mission-content {
+      width: 100%;
+      height: 80%;
+    }
+    .aim .mission-box .mission-content .mission-header {
+      height: 40px;
+      width: 50%;
+      margin-top: 20px;
+    }
+    .mission-box .mission-content .mission-header img {
+      width: 50px;
+      height: 100%;
+    }
+  
+    .aim .mission-box .mission-content .mission-header h3 {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 0px;
+      color: #3a3a3a;
+    }
+  
+    .aim .mission-box .mission-content .mission {
+      width: 90%;
+      margin: 20px 0;
+    }
+    .aim .mission-box .mission-content .mission p {
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 25px;
+      text-align: justify;
+      margin-top: 20px;
+      color: #3a3a3a;
+    }
+  
+    .mission-box .empty-mission-style {
+      position: absolute;
+      left: -25px;
+      top: 42%;
+      width: 115%;
+      height: 200px;
+      border: 6px solid #6c6d29;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+      border-top: none;
+    }
+    .mission-box .left-mission-style {
+      position: absolute;
+      top: 42%;
+      left: -25px;
+      height: 6px;
+      width: 100px;
+      background: #6c6d29;
+    }
+    .mission-box .left-circle {
+      position: absolute;
+      top: 40%;
+      left: 60px;
+      width: 25px;
+      height: 18px;
+      border-radius: 50%;
+      background: #6c6d29;
+    }
+    .mission-box .right-circle {
+      position: absolute;
+      top: 40%;
+      right: -20px;
+      width: 25px;
+      height: 18px;
+      border-radius: 50%;
+      background: #6c6d29;
+    }
+  }
+  
+  @media only screen and (min-width: 769px) and (max-width: 992px) {
+    .aim-section .aim .vision-box {
+      position: relative;
+      width: 45%;
+      height: 300px;
+      border-radius: 40px;
+    }
+    .aim-section .aim .vision-box hr {
+      width: 100%;
+      height: 40px;
+    }
+  
+    .aim .vision-box .vision-content {
+      width: 100%;
+      height: 80%;
+    }
+    .aim .vision-box .vision-content .vision-header {
+      height: 40px;
+      width: 50%;
+      margin-top: 20px;
+    }
+    .vision-box .vision-content .vision-header img {
+      width: 50px;
+      height: 100%;
+    }
+  
+    .aim .vision-box .vision-content .vision-header h3 {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 0px;
+      color: #3a3a3a;
+    }
+  
+    .aim .vision-box .vision-content .vision {
+      width: 90%;
+      margin: 20px 0;
+    }
+    .aim .vision-box .vision-content .vision p {
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 25px;
+      text-align: justify;
+      margin-top: 20px;
+      color: #3a3a3a;
+    }
+  
+    .vision-box .empty-vision-style {
+      position: absolute;
+      left: -25px;
+      bottom: 55%;
+      width: 115%;
+      height: 170px;
+      border: 6px solid #4a6985;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      border-bottom: none;
+    }
+    .vision-box .right-vision-style {
+      position: absolute;
+      top: 43%;
+      right: -20px;
+      height: 6px;
+      width: 100px;
+    }
+    .vision-box .left-circle {
+      position: absolute;
+      top: 41%;
+      left: -18px;
+      width: 25px;
+      height: 18px;
+      border-radius: 50%;
+    }
+    .vision-box .right-circle {
+      position: absolute;
+      top: 41%;
+      right: 60px;
+      width: 25px;
+      height: 18px;
+      border-radius: 50%;
+    }
+  }
