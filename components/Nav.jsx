@@ -1,6 +1,36 @@
-import React from "react";
+"use client";
+
+import React, { useState, useEffect } from "react";
 
 const Nav = () => {
+  const [isLargeScreen, setIsLargeScreen] = useState(true);
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  const navHandler = () => {
+    setIsVisible(!isVisible);
+    console.log("clicked");
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      // Check the current screen size condition and update the state accordingly
+      const screenWidth = window.innerWidth;
+      setIsLargeScreen(screenWidth >= 576); // Set the condition based on your requirement
+    };
+
+    // Add the event listener for the resize event
+    window.addEventListener("resize", handleResize);
+
+    // Call the handleResize function initially to set the initial state
+    handleResize();
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="container">
       <div className="header">
@@ -22,7 +52,7 @@ const Nav = () => {
             <input type="search" name="Search" placeholder="Search" />
           </div>
         </div>
-        <div className="menu">
+        <div className="menu" onClick={navHandler}>
           <img src="/icons/menu.jpg" />
           <img
             src="/L-images/close.png"
@@ -40,7 +70,7 @@ const Nav = () => {
             <div className="navlinks">
               <ul>
                 <li className="navlink-content">
-                  <a href="/" id="home">
+                  <a href="#" id="home">
                     HOME
                   </a>
                 </li>
@@ -62,67 +92,70 @@ const Nav = () => {
                 </li>
               </ul>
 
+                  <div className="dropdown">
+                    <ul className="dropdown-content">
+                      <li className="dropdown-links">
+                        <a href="/events/sports">Sports</a>
+                      </li>
+                      <li className="dropdown-links">
+                        <a href="#">Picnics</a>
+                      </li>
+                      <li className="dropdown-links">
+                        <a href="#">SRC WEEK</a>
+                      </li>
+                      <li className="dropdown-links">
+                        <a href="#">Voting</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="navlinks">
+                  <ul>
+                    <li className="navlink-content droplink">
+                      <a href="/resources" id="resources">
+                        RESOURCES
+                        <i className="fa-solid fa-caret-down drop-icon"></i>
+                      </a>
+                    </li>
+                  </ul>
+
+                  <div className="dropdown">
+                    <ul className="dropdown-content" k>
+                      <li className="dropdown-links">
+                        <a href="#">Past Questions</a>
+                      </li>
+                      <li className="dropdown-links">
+                        <a href="/components/slide.html">Lecture Slides</a>
+                      </li>
+                      <li className="dropdown-links">
+                        <a href="#">Academic Timetable</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="navlinks">
+                  <ul>
+                    <li className="navlink-content droplink">
+                      <a href="#" id="leadership">
+                        LEADERSHIP
+                        <i className="fa-solid fa-caret-down drop-icon"></i>
+                      </a>
+                    </li>
+                  </ul>
+
               <div className="dropdown">
                 <ul className="dropdown-content">
                   <li className="dropdown-links">
-                    <a href="/events/sports">Sports</a>
+                    <a href="/leadership">Executives</a>
                   </li>
                   <li className="dropdown-links">
-                    <a href="#">Picnics</a>
+                    <a href="#">Facts and Figures</a>
                   </li>
                   <li className="dropdown-links">
-                    <a href="#">SRC WEEK</a>
+                    <a href="#">NAMSA Executives</a>
                   </li>
                   <li className="dropdown-links">
-                    <a href="#">Voting</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="navlinks">
-              <ul>
-                <li className="navlink-content droplink">
-                  <a href="/resources" id="resources">
-                    RESOURCES
-                    <i className="fa-solid fa-caret-down drop-icon"></i>
-                  </a>
-                </li>
-              </ul>
-
-              <div className="dropdown">
-                <ul className="dropdown-content" k>
-                  <li className="dropdown-links">
-                    <a href="#">Past Questions</a>
-                  </li>
-                  <li className="dropdown-links">
-                    <a href="/components/slide.html">Lecture Slides</a>
-                  </li>
-                  <li className="dropdown-links">
-                    <a href="#">Academic Timetable</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="navlinks">
-              <ul>
-                <li className="navlink-content droplink">
-                  <a href="#" id="leadership">
-                    LEADERSHIP
-                    <i className="fa-solid fa-caret-down drop-icon"></i>
-                  </a>
-                </li>
-              </ul>
-
-              <div className="dropdown">
-                <ul className="dropdown-content">
-                  <li className="dropdown-links">
-                    <a href="https://www.uhas.edu.gh/en/students/src.html" target="_blank">Executives</a>
-                  </li>
-                  <li className="dropdown-links">
-                    <a href="http://localhost:3000/leadership">NAMSA Executives</a>
-                  </li>
-                  <li className="dropdown-links">
-                    <a href="https://www.uhas.edu.gh/en/students/grasag.html" target="_blank">Graduate Board</a>
+                    <a href="#">NAMSA Access</a>
                   </li>
                   <li className="dropdown-links">
                     <a href="#">Jobs</a>
@@ -182,7 +215,7 @@ const Nav = () => {
               <ul>
                 <li className="navlink-content droplink">
                   <a href="#" id="contact">
-                    MEDIA <i className="fa-solid fa-caret-down drop-icon"></i>
+                    CONTACT <i className="fa-solid fa-caret-down drop-icon"></i>
                   </a>
                 </li>
               </ul>
@@ -190,13 +223,28 @@ const Nav = () => {
               <div className="dropdown">
                 <ul className="dropdown-content">
                   <li className="dropdown-links">
-                    <a href="#">Photo Gallery</a>
+                    <a href="#">Organization</a>
                   </li>
                   <li className="dropdown-links">
-                    <a href="#">Upcoming Events</a>
+                    <a href="#">Facts and Figures</a>
                   </li>
                   <li className="dropdown-links">
-                    <a href="#">Announcements</a>
+                    <a href="#">NAMSA Executives</a>
+                  </li>
+                  <li className="dropdown-links">
+                    <a href="#">NAMSA Access</a>
+                  </li>
+                  <li className="dropdown-links">
+                    <a href="#">Jobs</a>
+                  </li>
+                  <li className="dropdown-links">
+                    <a href="#">Courses offered in UHAS</a>
+                  </li>
+                  <li className="dropdown-links">
+                    <a href="#">Root of NAMSA</a>
+                  </li>
+                  <li className="dropdown-links">
+                    <a href="#">Rules and Regulation</a>
                   </li>
                 </ul>
               </div>
