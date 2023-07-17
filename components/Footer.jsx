@@ -45,16 +45,16 @@ const Footer = () => {
                   <a href="https://www.uhas.edu.gh/en/students/grasag.html" target="_blank">Porspective Graduates</a>
                 </li>
                 <li>
-                  <a href="#">Porspective Online/Distance Students</a>
+                  <a href="https://www.uhas.edu.gh/en/directorates/hrd.html" target="_blank">Human Resources</a>
                 </li>
                 <li>
-                  <a href="#">Alumni</a>
+                  <a href="https://www.uhas.edu.gh/en/about-us/university-leadership.html">University Leadership</a>
                 </li>
                 <li>
-                  <a href="#">Teachers</a>
+                  <a href="https://www.uhas.edu.gh/en/directorates/academic-affairs.html">Academic Affairs</a>
                 </li>
                 <li>
-                  <a href="#">Business/Partnerships</a>
+                  <a href="https://www.uhas.edu.gh/en/" target="_blank">Other Schools</a>
                 </li>
               </ul>
             </div>
@@ -67,16 +67,16 @@ const Footer = () => {
             <div className="quick-links">
               <ul>
                 <li>
-                  <a href="#">Any Questions?</a>
+                  <a href="#">Feedback</a>
                 </li>
                 <li>
-                  <a href="#">Jobs and vancancies</a>
+                  <a href="https://www.uhas.edu.gh/en/public/vacancies.html" target="_blank">Vacancies</a>
                 </li>
                 <li>
-                  <a href="#">Semester dates</a>
+                  <a href="http://www.uhasonline.com/admissions">Admission</a>
                 </li>
                 <li>
-                  <a href="#">Map</a>
+                  <a href="https://www.bing.com/maps?osid=c2595a74-afa3-47db-b3dc-c14d0f8c4991&cp=6.601603~0.480223&lvl=16&pi=0&imgid=ccb07856-d86f-4535-b3ee-fd417e8a399a&v=2&sV=2&form=S00027" target="_blank">Location</a>
                 </li>
               </ul>
             </div>
