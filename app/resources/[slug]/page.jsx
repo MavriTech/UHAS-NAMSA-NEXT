@@ -3,16 +3,22 @@ import "@styles/slide.css";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Page({ params }) {
+const getCardsData = async (slug) => {
+  const res = await fetch(`https://jsonplaceholder.typicode.com/users/${slug}`);
+  if (!res.ok) {
+    throw new Error("Failed to fetch data");
+  }
+  return res.json();
+};
+
+export default async function Page({ params }) {
+  const data = await getCardsData(params.slug);
   return (
     <div>
-      My Post: {params.slug}
       <header className="nav-header" id="navHeader">
         <div className="left-header">
           <span className="title">namsa-learn</span>
-          <span className="course-title">
-            introduction to the respiratory system
-          </span>
+          <span className="course-title">{data.name}</span>
         </div>
         <div className="share-icon">
           <button className="share-btn">
