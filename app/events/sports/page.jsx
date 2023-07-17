@@ -221,7 +221,7 @@ export default function Sports() {
       </div>
       {/* pagecontent section ends */}
 
-        <Footer />
+        
       </div>
     </>
   );

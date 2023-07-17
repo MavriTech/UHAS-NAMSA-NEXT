@@ -116,16 +116,13 @@ const Nav = () => {
               <div className="dropdown">
                 <ul className="dropdown-content">
                   <li className="dropdown-links">
-                    <a href="/leadership">Executives</a>
+                    <a href="https://www.uhas.edu.gh/en/students/src.html" target="_blank">Executives</a>
                   </li>
                   <li className="dropdown-links">
-                    <a href="#">Facts and Figures</a>
+                    <a href="http://localhost:3000/leadership">NAMSA Executives</a>
                   </li>
                   <li className="dropdown-links">
-                    <a href="#">NAMSA Executives</a>
-                  </li>
-                  <li className="dropdown-links">
-                    <a href="#">NAMSA Access</a>
+                    <a href="https://www.uhas.edu.gh/en/students/grasag.html" target="_blank">Graduate Board</a>
                   </li>
                   <li className="dropdown-links">
                     <a href="#">Jobs</a>
@@ -185,7 +182,7 @@ const Nav = () => {
               <ul>
                 <li className="navlink-content droplink">
                   <a href="#" id="contact">
-                    CONTACT <i className="fa-solid fa-caret-down drop-icon"></i>
+                    MEDIA <i className="fa-solid fa-caret-down drop-icon"></i>
                   </a>
                 </li>
               </ul>
@@ -193,28 +190,13 @@ const Nav = () => {
               <div className="dropdown">
                 <ul className="dropdown-content">
                   <li className="dropdown-links">
-                    <a href="#">Organization</a>
+                    <a href="#">Photo Gallery</a>
                   </li>
                   <li className="dropdown-links">
-                    <a href="#">Facts and Figures</a>
+                    <a href="#">Upcoming Events</a>
                   </li>
                   <li className="dropdown-links">
-                    <a href="#">NAMSA Executives</a>
-                  </li>
-                  <li className="dropdown-links">
-                    <a href="#">NAMSA Access</a>
-                  </li>
-                  <li className="dropdown-links">
-                    <a href="#">Jobs</a>
-                  </li>
-                  <li className="dropdown-links">
-                    <a href="#">Courses offered in UHAS</a>
-                  </li>
-                  <li className="dropdown-links">
-                    <a href="#">Root of NAMSA</a>
-                  </li>
-                  <li className="dropdown-links">
-                    <a href="#">Rules and Regulation</a>
+                    <a href="#">Announcements</a>
                   </li>
                 </ul>
               </div>

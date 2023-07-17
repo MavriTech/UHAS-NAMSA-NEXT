@@ -13,26 +13,24 @@ const Footer = () => {
             <div className="info-about-links">
               <ul>
                 <li>
-                  <a href="#">UHASS University</a>
+                  <a href="https://www.uhas.edu.gh/en/" target ='_blank'>UHASS University</a>
                 </li>
                 <li>
-                  <a href="#">Strategic Plan</a>
+                  <a href="https://www.uhas.edu.gh/en/about-us/strategic-objectives.html" target ='_blank'>Strategic Objectives</a>
                 </li>
                 <li>
-                  <a href="#">Courses fees and findings</a>
+                  <a href="https://www.uhas.edu.gh/en/admissions/cut-off-points-2022.html" target ='_blank'>Courses</a>
                 </li>
                 <li>
-                  <a href="#">Data privacy/GDPR</a>
+                  <a href="https://www.uhas.edu.gh/en/admissions/fees.html" target ='_blank'>Fees and findings</a>
                 </li>
                 <li>
-                  <a href="#">Statement on Modern Slavery</a>
+                  <a href="https://www.uhas.edu.gh/en/admissions/how-to-apply.html" target = '_blank'>How to apply</a>
                 </li>
                 <li>
-                  <a href="#">Open days</a>
+                  <a href="https://library.uhas.edu.gh/" target="_blank">Library</a>
                 </li>
-                <li>
-                  <a href="#">Libraries</a>
-                </li>
+                
               </ul>
             </div>
           </div>
