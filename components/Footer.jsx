@@ -42,10 +42,7 @@ const Footer = () => {
             <div className="info-for-links">
               <ul>
                 <li>
-                  <a href="#">Porspective Undergraduates</a>
-                </li>
-                <li>
-                  <a href="#">Porspective Graduates</a>
+                  <a href="https://www.uhas.edu.gh/en/students/grasag.html" target="_blank">Porspective Graduates</a>
                 </li>
                 <li>
                   <a href="#">Porspective Online/Distance Students</a>
