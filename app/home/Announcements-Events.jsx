@@ -1,7 +1,19 @@
 import React from "react";
-import '@styles/announce-events.css'
+import "@styles/announce-events.css";
+import Link from "next/link";
 
-export default function AnnouncementEvent() {
+async function getDate() {
+  const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+
+  if (!response.ok) {
+    throw new Error("Failed to fetch data");
+  }
+  return response.json();
+}
+
+export default async function AnnouncementEvent() {
+  const dataSet = await getDate();
+
   return (
     <>
       <div className="notice">
@@ -11,21 +23,25 @@ export default function AnnouncementEvent() {
             <hr />
           </div>
           <div className="event-container">
-            <div className="event-content">
-              <div className="event-date-box">
-                <div className="event-date">
-                  <span>
-                    14 <br />
-                    JUN
-                  </span>
-                </div>
+            {dataSet.map((data) => (
+              <div className="event-content" key={data.id}>
+                <Link href={`/${data.id}`}>
+                  <div className="event-date-box">
+                    <div className="event-date">
+                      <span>
+                        14 <br />
+                        JUN
+                      </span>
+                    </div>
+                  </div>
+                  <div className="event-info">
+                    <h4>#{data.title}</h4>
+                    <p>The Weston Library</p>
+                    <span>14 JUN 2023</span>
+                  </div>
+                </Link>
               </div>
-              <div className="event-info">
-                <h4>#StartedinOxford Demo Night 2023</h4>
-                <p>The Weston Library</p>
-                <span>14 JUN 2023</span>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
 
@@ -35,12 +51,14 @@ export default function AnnouncementEvent() {
             <hr />
           </div>
           <div className="announcement-container">
-            <div className="announcement-content">
-              <a href="#">
-                <h3>LECIAD 2023/2024 Admissions</h3>
-              </a>
-              <hr />
-            </div>
+            {dataSet.map((data) => (
+              <div className="announcement-content" key={data.id}>
+                <a href={`/${data.id}`}>
+                  <h3>{data.title}</h3>
+                </a>
+                <hr />
+              </div>
+            ))}
           </div>
         </div>
       </div>
