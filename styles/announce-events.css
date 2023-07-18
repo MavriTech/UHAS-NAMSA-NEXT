@@ -59,7 +59,7 @@
   }
   .event-content .event-date-box .event-date {
     width: 44px;
-    height: 48px;
+    height: 44px;
     text-align: center;
     margin: 15px auto;
   }
@@ -127,9 +127,10 @@
   }
   .announcement .announcement-container .announcement-content a {
     font-weight: 600;
+    
     font-size: 15px;
     line-height: 15px;
-    color: #3a3a3a;
+    color: #000000;
     text-decoration: none;
   }
   .announcement .announcement-container .announcement-content a:hover {
