@@ -42,10 +42,11 @@ const Footer = () => {
             <div className="info-for-links">
               <ul>
                 <li>
-                  <a href="https://www.uhas.edu.gh/en/students/grasag.html" target="_blank">Porspective Graduates</a>
+                  <a href="https://www.uhas.edu.gh/en/students/grasag.html" target="_blank">Prospective Graduates</a>
                 </li>
                 <li>
                   <a href="https://www.uhas.edu.gh/en/directorates/hrd.html" target="_blank">Human Resources</a>
+
                 </li>
                 <li>
                   <a href="https://www.uhas.edu.gh/en/about-us/university-leadership.html">University Leadership</a>
