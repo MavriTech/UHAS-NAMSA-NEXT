@@ -35,7 +35,7 @@ export default async function AnnouncementEvent() {
                     </div>
                   </div>
                   <div className="event-info">
-                    <h4>#{data.title}</h4>
+                    <h4>#{data.title.slice(0, 30) + "..."}</h4>
                     <p>The Weston Library</p>
                     <span>14 JUN 2023</span>
                   </div>
@@ -54,7 +54,8 @@ export default async function AnnouncementEvent() {
             {dataSet.map((data) => (
               <div className="announcement-content" key={data.id}>
                 <a href={`/${data.id}`}>
-                  <h3>{data.title}</h3>
+                  <h3>{data.title.slice (0, 40) + "..."}</h3>
+                  <h3>{data.body.slice(0, 50) + "..."}</h3>
                 </a>
                 <hr />
               </div>
