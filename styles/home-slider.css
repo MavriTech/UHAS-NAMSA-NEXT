@@ -2,7 +2,7 @@
     position: relative;
     height: 594px;
     width: 98%;
-    margin: 5px auto;
+    margin: 0px auto;
     overflow: hidden;
     z-index: 1;
   }
@@ -136,6 +136,8 @@
       position: relative;
       height: 358px;
       width: 100%;
+      margin-top: 100px;
+
     }
     .manual-nav .man-btn {
       height: 10px;

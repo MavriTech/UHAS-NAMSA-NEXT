@@ -6,6 +6,7 @@
   html {
     scroll-behavior: smooth;
   }
+  
   .slider-wrapper .slider {
     width: 300%;
   }

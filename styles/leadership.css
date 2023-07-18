@@ -15,7 +15,6 @@
   font-size: 35px;
   text-align: center;
   color: #4a6985;
-  margin: 10px 0;
 }
 
 .leaders .executives {
@@ -58,7 +57,6 @@
   top: 0;
   background: rgba(0, 0, 0, 0.25);
   border-radius: 50%;
-
 }
 .executives .profile-details .profile-image img {
   height: 100%;
@@ -122,11 +120,30 @@
 .executives .star img {
   width: 1.3rem;
 }
+.executive button{
+  position: absolute;
+  right: 1%;
+  bottom: 10%;
+  color: #4a6985;
+  background: white;
+  border-radius: 4px;
+  border: 1px solid #4a6985;
+  padding: 3px;
+  cursor: pointer;
+}
+.executive button:hover{
+  color: white;
+  background: #4a6985;
+}
 
 @media only screen and (max-width: 476px) {
+  .leaders{
+    margin-top: 40px;
+  }
   .leaders h1 {
     font-size: 22px;
     text-align: center;
+    margin-bottom: 15px;
   }
 
   .leaders .executives {
@@ -158,9 +175,10 @@
   }
   .profile-details .executive-social-icons {
     position: absolute;
-    bottom: 20%;
+    bottom: -10%;
     height: 20px;
-    width: 80px;
+    width: 100px;
+    margin: 0 2px;
     background: #ffffff33;
   }
 
@@ -224,9 +242,9 @@
   }
   .profile-details .executive-social-icons {
     position: absolute;
-    bottom: 20%;
+    bottom: -10%;
     height: 20px;
-    width: 80px;
+    width: 100px;
     background: #ffffff33;
   }
 
@@ -253,10 +271,13 @@
 }
 
 @media (min-width: 579px) and (max-width: 730px) {
+  .leaders {
+    margin-top: 50px;
+  }
   .leaders h1 {
     font-size: 25px;
     text-align: center;
-    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .leaders .executives {
@@ -290,12 +311,14 @@
   }
   .profile-details .executive-social-icons {
     position: absolute;
-    bottom: 20%;
+    bottom: -10%;
     height: 20px;
     width: 100px;
-    background: #ffffff33;
+    align-content: center;
   }
-
+  .profile-details .executive-social-icons img {
+    margin: 0 4px;
+  }
   .profile-details .executive-social-icons img {
     height: 14px;
     width: 16px;
@@ -322,9 +345,13 @@
   }
 }
 @media only screen and (min-width: 731px) and (max-width: 992px) {
+  .leaders {
+    margin-top: 20px;
+  }
   .leaders h1 {
     font-size: 28px;
     text-align: center;
+    margin-bottom: 20px;
   }
 
   .leaders .executives {
