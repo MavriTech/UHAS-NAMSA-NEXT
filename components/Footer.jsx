@@ -44,13 +44,13 @@ const Footer = () => {
             <div className="info-for-links">
               <ul>
                 <li>
-                  <a href="#">Porspective Undergraduates</a>
+                  <a href="#">Prospective Undergraduates</a>
                 </li>
                 <li>
-                  <a href="#">Porspective Graduates</a>
+                  <a href="#">Prospective Graduates</a>
                 </li>
                 <li>
-                  <a href="#">Porspective Online/Distance Students</a>
+                  <a href="#">Prospective Online/Distance Students</a>
                 </li>
                 <li>
                   <a href="#">Alumni</a>
