@@ -225,8 +225,10 @@ export default function Sports() {
             </div>
           </div>
         </div>
-        {/* pagecontent section ends */}
+
+        {/*  */}
       </div>
+      {/* pagecontent section ends */}
     </>
   );
 }

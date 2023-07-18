@@ -1,159 +1,156 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  .slider-wrapper .slider {
-    width: 300%;
-  }
-  .slider .slide {
-    position: relative;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+.slider-wrapper .slider {
+  width: 300%;
+}
+.slider .slide {
+  position: relative;
+}
+.slide-description {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 58px;
+  width: 35%;
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.slide-description .circle {
+  height: 20%;
+  width: 4%;
+  border-radius: 50%;
+  background: #ffffff;
+}
+.slide-description span {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 576px) {
   .slide-description {
-    position: absolute;
-    bottom: 20px;
-    right: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 58px;
-    width: 35%;
-    border-radius: 8px;
-    backdrop-filter: blur(5px);
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-  }
-  
-  .slide-description .circle {
-    height: 20%;
-    width: 4%;
-    border-radius: 50%;
-    background: #ffffff;
+    height: 20px;
+    border-radius: 2px;
   }
   .slide-description span {
-    font-size: 20px;
-    font-weight: 700;
-    color: #ffffff;
-    margin-left: 10px;
+    font-size: 10px;
   }
-  
-  @media only screen and (max-width: 576px) {
-    .slide-description {
-      height: 20px;
-      border-radius: 2px;
-    }
-    .slide-description span {
-      font-size: 10px;
-    }
-  }
-  @media only screen and (min-width: 577px) and (max-width: 768px) {
-  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+}
+.page-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.content {
+  width: 48%;
+}
+.content .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px auto;
+}
+
+.title h2 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #4a6985;
+}
+.title hr {
+  height: 2px;
+  width: 25%;
+  border: none;
+  background: #4a6985;
+}
+.content p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+.content .achievements .achievement {
+  list-style: none;
+}
+.content .achievements .achievement::before {
+  content: "\2022";
+  color: #6c6d29;
+  width: 15px;
+  margin-right: 5px;
+}
+@media only screen and (max-width: 576px) {
   .page-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 90%;
-    margin: 0 auto;
-    padding: 20px;
+    width: 95%;
+    padding: 15px;
   }
   .content {
-    width: 48%;
+    width: 100%;
   }
-  .content .title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 5px auto;
-  }
-  
   .title h2 {
-    font-size: 35px;
-    font-weight: 700;
-    color: #4a6985;
-  }
-  .title hr {
-    height: 2px;
-    width: 25%;
-    border: none;
-    background: #4a6985;
+    font-size: 16px;
   }
   .content p {
-    font-weight: 400;
-    font-size: 16px;
-    color: #000000;
+    font-size: 12px;
   }
   .content .achievements .achievement {
-    list-style: none;
+    font-size: 12px;
   }
-  .content .achievements .achievement::before {
-    content: "\2022";
-    color: #6c6d29;
-    width: 15px;
-    margin-right: 5px;
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .page-container {
+    width: 95%;
+    padding: 20px;
   }
-  @media only screen and (max-width: 576px) {
-    .page-container {
-      width: 95%;
-      padding: 15px;
-    }
-    .content {
-      width: 100%;
-    }
-    .title h2 {
-      font-size: 16px;
-    }
-    .content p {
-      font-size: 12px;
-    }
-    .content .achievements .achievement {
-      font-size: 12px;
-    }
+  /* .content {
+        width: 100%;
+      } */
+  .content .title {
+    width: 100%;
   }
-  
-  @media screen and (min-width: 577px) and (max-width: 768px) {
-    .page-container {
-      width: 95%;
-      padding: 20px;
-    }
-    /* .content {
-          width: 100%;
-        } */
-    .content .title {
-      width: 100%;
-    }
-    .title h2 {
-      font-size: 17px;
-    }
-    .content p {
-      font-size: 13px;
-    }
-    .content .achievements .achievement {
-      font-size: 13px;
-    }
+  .title h2 {
+    font-size: 17px;
   }
-  @media screen and (min-width: 769px) and (max-width: 992px) {
-      .page-container {
-          width: 90%;
-          padding: 20px;
-        }
-        .content .title {
-          width: 100%;
-        }
-        .title h2 {
-          font-size: 20px;
-        }
-        .content p {
-          font-size: 13px;
-        }
-        .content .achievements .achievement {
-          font-size: 13px;
-        }
-      
+  .content p {
+    font-size: 13px;
   }
-  @media screen and (min-width: 993px) {
-      
+  .content .achievements .achievement {
+    font-size: 13px;
   }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .page-container {
+    width: 90%;
+    padding: 20px;
+  }
+  .content .title {
+    width: 100%;
+  }
+  .title h2 {
+    font-size: 20px;
+  }
+  .content p {
+    font-size: 13px;
+  }
+  .content .achievements .achievement {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 993px) {
+}

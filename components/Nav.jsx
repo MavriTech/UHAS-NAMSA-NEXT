@@ -53,7 +53,7 @@ const Nav = () => {
           </div>
         </div>
         <div className="menu" onClick={navHandler}>
-          <img src="/L-images/menu.png" />
+          <img src="/icons/menu.jpg" />
           <img
             src="/L-images/close.png"
             alt=""
@@ -71,7 +71,7 @@ const Nav = () => {
               <div className="navlinks">
                 <ul>
                   <li className="navlink-content">
-                    <a href="#" id="home">
+                    <a href="/" id="home">
                       HOME
                     </a>
                   </li>
@@ -151,11 +151,9 @@ const Nav = () => {
                       <a href="/leadership">Executives</a>
                     </li>
                     <li className="dropdown-links">
-                      <a href="#">Facts and Figures</a>
+                      <a href="#">Committee Members</a>
                     </li>
-                    <li className="dropdown-links">
-                      <a href="#">NAMSA Executives</a>
-                    </li>
+                    
                     <li className="dropdown-links">
                       <a href="#">NAMSA Access</a>
                     </li>

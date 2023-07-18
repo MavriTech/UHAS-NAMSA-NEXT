@@ -48,6 +48,18 @@ const LeadershipPage = () => {
           Linkedin: { imgSrc: "/icons/linkedin.png", href: "#" },
         },
       },
+      {
+        name: "Essilfie Prince Bondzie",
+        position: "General Secretary",
+        imageSource: "/images/executives_img/GENERAL SECRETARY.jpg",
+        bio: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus iusto dolore tenetur porro quae nobis expedita commodi optio perferendis et fuga ipsa eaque explicabo ipsum harum quia blanditiis sint, consequatur cum culpa enim tempore eum reprehenderit fugiat. Nulla impedit quibusdam repudiandae? Iste a saepe quisquam suscipit eveniet vitae assumenda fuga! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque sint quis corrupti ratione culpa ad quasi, eveniet dolorem odio sequi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt consectetur quasi autem, omnis ratione similique ea dolorem",
+        socials: {
+          Facebook: { imgSrc: "/icons/facebook.png", href: "#" },
+          Twitter: { imgSrc: "/icons/twitter.png", href: "#" },
+          Instagram: { imgSrc: "/images/instagram.webp", href: "#" },
+          Linkedin: { imgSrc: "/icons/linkedin.png", href: "#" },
+        },
+      },
     ];
 
     function createSocialIconLink(name, href, imgSrc) {
@@ -132,6 +144,10 @@ const LeadershipPage = () => {
       star.appendChild(starImage);
       executive.appendChild(star);
 
+      const button = document.createElement("button");
+      button.type = 'button';
+      button.textContent = "Read More";
+      executive.appendChild(button);
       return executive;
     }
 

@@ -1,5 +1,5 @@
 import React from "react";
-import "@styles/ResourceTopSec.css";
+import "@styles/resourceTopSec.css";
 import Image from "next/image";
 import Link from "next/link";
 
