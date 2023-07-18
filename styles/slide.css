@@ -274,7 +274,7 @@ body {
 }
 
 .subLessons {
-  display: none;
+  /* display: none; */
 }
 
 .sub-lesson {

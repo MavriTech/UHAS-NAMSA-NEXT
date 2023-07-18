@@ -14,7 +14,12 @@ async function getDate(id) {
 const Announcement = async ({ params }) => {
   const data = await getDate(params.id);
 
-  return <div>{data.title}</div>;
+  return (
+    <div>
+      <h2>{data.title}</h2>
+      <p>{data.body}</p>
+    </div>
+  );
 };
 
 export default Announcement;
