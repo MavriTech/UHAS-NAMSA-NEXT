@@ -53,7 +53,7 @@ const Nav = () => {
           </div>
         </div>
         <div className="menu" onClick={navHandler}>
-          <img src="/icons/menu.jpg" />
+          <img src="/icons/menu.png" />
           <img
             src="/L-images/close.png"
             alt=""
