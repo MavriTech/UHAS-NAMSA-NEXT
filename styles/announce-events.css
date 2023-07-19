@@ -156,7 +156,7 @@
   }
   .notice .events {
     height: 450px;
-    width: 100%;
+    width: 90%;
   }
   .notice .events .event-title {
     width: 100%;
@@ -173,13 +173,14 @@
   }
   .notice .events .event-container {
     height: 80%;
-    width:100%;
+    width: 90%;
+    overflow-x: hidden;
     margin: 0 auto;
   }
   .events .event-container .event-content {
-    width: 97%;
+    width: 98%;
     height: 60px;
-    margin-bottom: 12px;
+    margin-bottom: 8px 0;
   }
   .events .event-content .event-date-box {
     width: 68px;
@@ -220,6 +221,7 @@
   .notice .announcement .announce-header {
     width: 100%;
     height: 59px;
+    
   }
   .notice .announcement .announce-header h2 {
     font-weight: 700;
@@ -231,6 +233,7 @@
     height: 2px;
   }
   .notice .announcement .announcement-container {
+   
     height: 60%;
     width: 90%;
     margin: 0 auto;
