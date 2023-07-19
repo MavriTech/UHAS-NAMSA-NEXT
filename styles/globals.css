@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap");
+
 :root {
   --font-green-text: #008800;
   --grey-background: #dee1e6b3;
@@ -12,6 +14,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Montserrat;
 }
 
 html {
@@ -128,7 +131,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #e8eaee;
+  background: #e8eaeeb9;
+  backdrop-filter: blur(15px);
   height: 68px;
   width: 100%;
 }
@@ -459,7 +463,6 @@ body {
 /* responsiveness for mobile devices  */
 @media only screen and (max-width: 576px) {
   .main-container {
-    padding-top: 80px;
     width: 100%;
   }
   .container {
@@ -722,7 +725,6 @@ body {
 @media only screen and (min-width: 600px) and (max-width: 768px) {
   .main-container {
     max-width: 100%;
-    padding-top: 120px;
   }
   .main-container .container {
     width: 100%;
@@ -966,7 +968,6 @@ body {
 @media only screen and (min-width: 769px) and (max-width: 992px) {
   .main-container {
     width: 95%;
-    padding-top: 120px;
   }
   .container {
     width: 95%;
@@ -1236,47 +1237,4 @@ body {
   }
 }
 
-/* responsiveness for big screen tabs and medium screen laptops ends*/
-:root {
-  --font-green-text: #008800;
-  --grey-background: #dee1e6b3;
-  --white: #ffffff;
-  --nav-background-color: #e8eaee;
-  --header-one-color: #4a6985;
-  --yellow-bg: #e3e725;
-  --box-shadow: 0 0 5px #b3b2b2;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-li {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-body {
-  background-image: url(/images/background.png);
-  background-position: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 100vh;
-}
-
-.whole-content {
-  max-width: 1214px;
-  margin: 2rem auto;
-  padding-top: 8%;
-  background-color: #fff;
-}
+ /* responsiveness for big screen tabs and medium screen laptops ends */

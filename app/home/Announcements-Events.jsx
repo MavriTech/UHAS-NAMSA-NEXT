@@ -37,7 +37,7 @@ export default async function AnnouncementEvent() {
                     </div>
                   </div>
                   <div className="event-info">
-                    <h4>#{data.title.slice(0, 30) + "..."}</h4>
+                    <h4>#{data.title.slice(0, 20) + "..."}</h4>
                     <p>The Weston Library</p>
                     <span>14 JUN 2023</span>
                   </div>
