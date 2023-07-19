@@ -285,9 +285,10 @@
     .events .event-content .event-date-box {
       /* width: 65px; */
       height: 100%;
+      margin-top: 40px;
     }
     .event-content .event-date-box .event-date {
-      width: 34px;
+      width: 35px;
       height: 38px;
       text-align: center;
       margin: 10px auto;
@@ -301,6 +302,7 @@
       width: 100%;
       padding-left: 5px;
       margin: 10px auto;
+      padding-left: 80px;
       
     }
     .event-info h4 {
