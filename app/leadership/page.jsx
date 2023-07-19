@@ -26,6 +26,18 @@ const LeadershipPage = () => {
       },
       {
         name: "Essilfie Prince Bondzie",
+        position: "Vice President ",
+        imageSource: "/images/executives_img/VICE PRESIDENTWELFARE COMMITEE CHAIRPERSON.jpg",
+        bio: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus iusto dolore tenetur porro quae nobis expedita commodi optio perferendis et fuga ipsa eaque explicabo ipsum harum quia blanditiis sint, consequatur cum culpa enim tempore eum reprehenderit fugiat. Nulla impedit quibusdam repudiandae? Iste a saepe quisquam suscipit eveniet vitae assumenda fuga! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque sint quis corrupti ratione culpa ad quasi, eveniet dolorem odio sequi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt consectetur quasi autem, omnis ratione similique ea dolorem",
+        socials: {
+          Facebook: { imgSrc: "/icons/facebook.png", href: "#" },
+          Twitter: { imgSrc: "/icons/twitter.png", href: "#" },
+          Instagram: { imgSrc: "/images/instagram.webp", href: "#" },
+          Linkedin: { imgSrc: "/icons/linkedin.png", href: "#" },
+        },
+      },
+      {
+        name: "Essilfie Prince Bondzie",
         position: "Organizer ",
         imageSource: "/images/executives_img/ORGANIZER.jpg",
         bio: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus iusto dolore tenetur porro quae nobis expedita commodi optio perferendis et fuga ipsa eaque explicabo ipsum harum quia blanditiis sint, consequatur cum culpa enim tempore eum reprehenderit fugiat. Nulla impedit quibusdam repudiandae? Iste a saepe quisquam suscipit eveniet vitae assumenda fuga! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque sint quis corrupti ratione culpa ad quasi, eveniet dolorem odio sequi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt consectetur quasi autem, omnis ratione similique ea dolorem",
@@ -145,7 +157,7 @@ const LeadershipPage = () => {
       executive.appendChild(star);
 
       const button = document.createElement("button");
-      button.type = 'button';
+      button.type = "button";
       button.textContent = "Read More";
       executive.appendChild(button);
       return executive;
