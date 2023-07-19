@@ -151,11 +151,9 @@ const Nav = () => {
                       <a href="/leadership">Executives</a>
                     </li>
                     <li className="dropdown-links">
-                      <a href="#">Facts and Figures</a>
+                      <a href="#">Committee Members</a>
                     </li>
-                    <li className="dropdown-links">
-                      <a href="#">NAMSA Executives</a>
-                    </li>
+                    
                     <li className="dropdown-links">
                       <a href="#">NAMSA Access</a>
                     </li>

@@ -1,453 +1,453 @@
 /* Announcements and Upcoming Events Section begins */
 .notice {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 30rem;
+  margin: 0 auto;
+}
+.notice .events {
+  height: 100%;
+  width: 45%;
+}
+.notice .events .event-title {
+  width: 400px;
+  height: 69px;
+}
+.notice .events .event-title h2 {
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  line-height: 49px;
+  color: #4a6985;
+}
+.notice .events .event-title hr {
+  width: 325px;
+  height: 3px;
+  background-color: #4a6985;
+  border-radius: 53px;
+  border: none;
+  margin: 3px auto;
+}
+.notice .events .event-container {
+  height: 400px;
+  width: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.events .event-container .event-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 80px;
+  border: 1px solid #008800;
+  box-shadow: 0px 5px 5px #0088004c;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.events .event-content .event-date-box {
+  width: 20%;
+  height: 58px;
+  background: #008800;
+  position: relative;
+  top: 15px;
+  left: 10px;
+  border-radius: 5px;
+}
+.event-content .event-date-box .event-date {
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin: 15px auto;
+}
+.event-content .event-date-box .event-date span {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.event-info {
+  width: 95%;
+  height: 50px;
+  margin-right: 180px;
+  padding-left: 100px;
+  position: relative;
+  bottom: 44px;
+  
+}
+.event-info h4,p,span{
+  font-size: 15px;
+}
+.event-info p{
+  font-size: 14px;
+}
+.event-info span{
+  font-size: 12px;
+}
+.notice .announcement {
+  height: 100%;
+  width: 45%;
+
+}
+.notice .announcement .announce-header {
+  flex-direction: column;
+  width: 400px;
+  height: 69px;
+}
+.notice .announcement .announce-header h2 {
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  line-height: 49px;
+  color: #4a6985;
+}
+.notice .announcement .announce-header hr {
+  width: 325px;
+  height: 3px;
+  background-color: #4a6985;
+  border-radius: 53px;
+  border: none;
+  margin: 3px auto;
+}
+.notice .announcement .announcement-container {
+  height: 400px;
+  width: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.announcement .announcement-container .announcement-content {
+  width: 95%;
+  height: 40px;
+  margin: 5px auto;
+  
+}
+.announcement .announcement-container .announcement-content a {
+  font-weight: 600;
+  
+  font-size: 15px;
+  line-height: 15px;
+  color: #000000;
+  text-decoration: none;
+}
+.announcement .announcement-container .announcement-content a:hover {
+  color : #4a6985;
+}
+.announcement .announcement-container .announcement-content hr {
+  width: 100%;
+  height: 2px;
+  background-color: #4a6985;
+  border: none;
+}
+
+/* media queries for upcoming events */
+@media only screen and (max-width: 576px) {
+  .notice {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    width: 80%;
-    height: 30rem;
-    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
   }
   .notice .events {
     height: 100%;
-    width: 45%;
+    width: 95%;
   }
   .notice .events .event-title {
-    width: 400px;
-    height: 69px;
+    width: 100%;
+    height: 59px;
   }
   .notice .events .event-title h2 {
     font-weight: 700;
-    font-size: 30px;
-    text-align: center;
-    line-height: 49px;
-    color: #4a6985;
+    font-size: 20px;
+    line-height: 30px;
   }
   .notice .events .event-title hr {
-    width: 325px;
-    height: 3px;
+    width: 200px;
+    height: 2px;
+  }
+  .notice .events .event-container {
+    height: 80%;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .events .event-container .event-content {
+    width: 97%;
+    height: 60px;
+    margin-bottom: 12px;
+  }
+  .events .event-content .event-date-box {
+    width: 68px;
+    height: 100%;
+    margin-top: 25px;
+  }
+  .event-content .event-date-box .event-date {
+    width: 40px;
+    height: 48px;
+    margin: 8px auto;
+  }
+  .event-content .event-date-box .event-date span {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .event-container .event-content .event-info {
+
+    margin-top: 5px;
+  }
+  .event-container .event-content .event-info h4 {
+    font-size: 13px;
+  }
+  .event-container .event-content .event-info p {
+    font-size: 12px;
+  }
+  .event-container .event-content .event-info span {
+    font-size: 10px;
+  }
+}
+/* media queries for upcoming events section ends*/
+
+/* media queries for announcement section */
+@media only screen and (max-width: 576px) {
+  .notice .announcement {
+    height: 100%;
+    width: 90%;
+  }
+  .notice .announcement .announce-header {
+    width: 100%;
+    height: 59px;
+  }
+  .notice .announcement .announce-header h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 35px;
+  }
+  .notice .announcement .announce-header hr {
+    width: 200px;
+    height: 2px;
+  }
+  .notice .announcement .announcement-container {
+    height: 60%;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .announcement .announcement-container .announcement-content {
+    width: 90%;
+    margin: 8px 0;
+  }
+  .announcement .announcement-container .announcement-content a {
+    font-weight: 600;
+    font-size: 10px;
+  }
+  .announcement .announcement-container .announcement-content hr {
+    width: 100%;
+    height: 1px;
     background-color: #4a6985;
-    border-radius: 53px;
     border: none;
-    margin: 3px auto;
+  }
+}
+/* media queries for announcement section ends*/
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .notice {
+    width: 90%;
+    height: 28rem;
+    margin: 0 auto;
+  }
+  .notice .events .event-title {
+    width: 300px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  .notice .events .event-title h2 {
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    line-height: 39px;
+  }
+  .notice .events .event-title hr {
+    width: 225px;
+    height: 2px;
   }
   .notice .events .event-container {
     height: 400px;
     width: 100%;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
   }
-  
   .events .event-container .event-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    height: 80px;
-    border: 1px solid #008800;
-    box-shadow: 0px 5px 5px #0088004c;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 15px;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
   }
   .events .event-content .event-date-box {
-    width: 20%;
-    height: 58px;
-    background: #008800;
-    position: relative;
-    top: 15px;
-    left: 10px;
-    border-radius: 5px;
+    /* width: 65px; */
+    height: 100%;
+    margin-top: 40px;
   }
   .event-content .event-date-box .event-date {
-    width: 44px;
-    height: 44px;
+    width: 35px;
+    height: 38px;
     text-align: center;
-    margin: 15px auto;
+    margin: 10px auto;
   }
   .event-content .event-date-box .event-date span {
     font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
-    color: #ffffff;
+    font-size: 13px;
+    line-height: 10px;
   }
   .event-info {
-    width: 95%;
-    height: 50px;
-    margin-right: 180px;
-    padding-left: 100px;
-    position: relative;
-    bottom: 44px;
+    width: 100%;
+    padding-left: 5px;
+    margin: 10px auto;
+    padding-left: 80px;
     
   }
-  .event-info h4,p,span{
-    font-size: 15px;
-  }
-  .event-info p{
-    font-size: 14px;
-  }
-  .event-info span{
+  .event-info h4 {
     font-size: 12px;
   }
-  .notice .announcement {
-    height: 100%;
-    width: 45%;
-
+  .event-info p {
+    font-size: 11.5px;
   }
+  .event-info span {
+    font-size: 9px;
+  }
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
   .notice .announcement .announce-header {
-    flex-direction: column;
-    width: 400px;
-    height: 69px;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 10px;
   }
   .notice .announcement .announce-header h2 {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
-    line-height: 49px;
-    color: #4a6985;
+    line-height: 39px;
   }
   .notice .announcement .announce-header hr {
-    width: 325px;
-    height: 3px;
-    background-color: #4a6985;
-    border-radius: 53px;
-    border: none;
-    margin: 3px auto;
+    width: 225px;
+    height: 2px;
+    margin-top: -10px;
   }
   .notice .announcement .announcement-container {
-    height: 400px;
+    height: 380px;
     width: 100%;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
   }
-  
   .announcement .announcement-container .announcement-content {
-    width: 95%;
-    height: 40px;
-    margin: 5px auto;
-    
+    width: 100%;
+    height: 36px;
+    margin: 10px 0;
   }
   .announcement .announcement-container .announcement-content a {
     font-weight: 600;
-    
-    font-size: 15px;
-    line-height: 15px;
-    color: #000000;
-    text-decoration: none;
-  }
-  .announcement .announcement-container .announcement-content a:hover {
-    color : #4a6985;
+    font-size: 13px;
   }
   .announcement .announcement-container .announcement-content hr {
+    width: 90%;
+    height: 1px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .notice {
+    width: 90%;
+    height: 30rem;
+  }
+  .notice .events {
+    height: 100%;
+    width: 47%;
+  }
+  .notice .events .event-title {
     width: 100%;
-    height: 2px;
-    background-color: #4a6985;
+  }
+  .notice .events .event-title h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .notice .events .event-title hr {
+    width: 255px;
+    height: 3px;
     border: none;
+    margin: 0px auto;
   }
-  
-  /* media queries for upcoming events */
-@media only screen and (max-width: 576px) {
-    .notice {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-      height: 850px;
-      margin: 20px 0;
-    }
-    .notice .events {
-      height: 450px;
-      width: 95%;
-    }
-    .notice .events .event-title {
-      width: 100%;
-      height: 59px;
-    }
-    .notice .events .event-title h2 {
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 30px;
-    }
-    .notice .events .event-title hr {
-      width: 200px;
-      height: 2px;
-    }
-    .notice .events .event-container {
-      height: 80%;
-      width: 100%;
-      margin: 0 auto;
-    }
-    .events .event-container .event-content {
-      width: 97%;
-      height: 60px;
-      margin-bottom: 12px;
-    }
-    .events .event-content .event-date-box {
-      width: 68px;
-      height: 100%;
-      margin-top: 25px;
-    }
-    .event-content .event-date-box .event-date {
-      width: 40px;
-      height: 48px;
-      margin: 8px auto;
-    }
-    .event-content .event-date-box .event-date span {
-      font-size: 12px;
-      line-height: 20px;
-    }
-    .event-container .event-content .event-info {
+  .notice .events .event-container {
+    height: 380px;
+    width: 100%;
+  }
+  .events .event-container .event-content {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  .events .event-content .event-date-box {
+    width: 50px;
+    height: 100%;
+    background: #008800;
+    border-radius: 5px;
+    margin-top: 25px;
+  }
+  .event-content .event-date-box .event-date {
+    width: 40px;
+    height: 45px;
+    text-align: center;
+    margin: 9px auto;
+  }
+  .event-content .event-date-box .event-date span {
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .event-info {
+    width: 100%;
+    height: 50px;    
+  }
+  .event-info h4 {
+    font-size: 13px;
+  }
+  .event-info p {
+    font-size: 13px;
+  }
+  .event-info span {
+    font-size: 10px;
+  }
+}
 
-      margin-top: 5px;
-    }
-    .event-container .event-content .event-info h4 {
-      font-size: 13px;
-    }
-    .event-container .event-content .event-info p {
-      font-size: 12px;
-    }
-    .event-container .event-content .event-info span {
-      font-size: 10px;
-    }
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .notice .announcement {
+    height: 100%;
+    width: 47%;
   }
-  /* media queries for upcoming events section ends*/
-  
-  /* media queries for announcement section */
-  @media only screen and (max-width: 576px) {
-    .notice .announcement {
-      height: 550px;
-      width: 90%;
-    }
-    .notice .announcement .announce-header {
-      width: 100%;
-      height: 59px;
-    }
-    .notice .announcement .announce-header h2 {
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 35px;
-    }
-    .notice .announcement .announce-header hr {
-      width: 200px;
-      height: 2px;
-    }
-    .notice .announcement .announcement-container {
-      height: 60%;
-      width: 90%;
-      margin: 0 auto;
-    }
-    .announcement .announcement-container .announcement-content {
-      width: 90%;
-      margin: 8px 0;
-    }
-    .announcement .announcement-container .announcement-content a {
-      font-weight: 600;
-      font-size: 10px;
-    }
-    .announcement .announcement-container .announcement-content hr {
-      width: 100%;
-      height: 1px;
-      background-color: #4a6985;
-      border: none;
-    }
+  .notice .announcement .announce-header {
+    width: 100%;
   }
-  /* media queries for announcement section ends*/
-
-  @media only screen and (min-width: 600px) and (max-width: 768px) {
-    .notice {
-      width: 90%;
-      height: 28rem;
-      margin: 0 auto;
-    }
-    .notice .events .event-title {
-      width: 300px;
-      height: 40px;
-      margin-bottom: 10px;
-    }
-    .notice .events .event-title h2 {
-      font-weight: 700;
-      font-size: 25px;
-      text-align: center;
-      line-height: 39px;
-    }
-    .notice .events .event-title hr {
-      width: 225px;
-      height: 2px;
-    }
-    .notice .events .event-container {
-      height: 400px;
-      width: 100%;
-    }
-    .events .event-container .event-content {
-      width: 100%;
-      height: 60px;
-      margin-bottom: 10px;
-    }
-    .events .event-content .event-date-box {
-      /* width: 65px; */
-      height: 100%;
-      margin-top: 40px;
-    }
-    .event-content .event-date-box .event-date {
-      width: 35px;
-      height: 38px;
-      text-align: center;
-      margin: 10px auto;
-    }
-    .event-content .event-date-box .event-date span {
-      font-weight: 600;
-      font-size: 13px;
-      line-height: 10px;
-    }
-    .event-info {
-      width: 100%;
-      padding-left: 5px;
-      margin: 10px auto;
-      padding-left: 80px;
-      
-    }
-    .event-info h4 {
-      font-size: 12px;
-    }
-    .event-info p {
-      font-size: 11.5px;
-    }
-    .event-info span {
-      font-size: 9px;
-    }
+  .notice .announcement .announce-header h2 {
+    font-size: 30px;
+    text-align: center;
   }
-  
-
-  @media only screen and (min-width: 600px) and (max-width: 768px) {
-    .notice .announcement .announce-header {
-      width: 300px;
-      height: 40px;
-      margin-bottom: 10px;
-    }
-    .notice .announcement .announce-header h2 {
-      font-weight: 700;
-      font-size: 25px;
-      text-align: center;
-      line-height: 39px;
-    }
-    .notice .announcement .announce-header hr {
-      width: 225px;
-      height: 2px;
-      margin-top: -10px;
-    }
-    .notice .announcement .announcement-container {
-      height: 380px;
-      width: 100%;
-    }
-    .announcement .announcement-container .announcement-content {
-      width: 100%;
-      height: 36px;
-      margin: 10px 0;
-    }
-    .announcement .announcement-container .announcement-content a {
-      font-weight: 600;
-      font-size: 13px;
-    }
-    .announcement .announcement-container .announcement-content hr {
-      width: 90%;
-      height: 1px;
-    }
+  .notice .announcement .announce-header hr {
+    width: 255px;
+    height: 3px;
+    border: none;
+    margin: 0px auto;
+  }
+  .notice .announcement .announcement-container {
+    height: 380px;
+    width: 100%;
   }
 
-  @media only screen and (min-width: 769px) and (max-width: 992px) {
-    .notice {
-      width: 90%;
-      height: 30rem;
-    }
-    .notice .events {
-      height: 100%;
-      width: 47%;
-    }
-    .notice .events .event-title {
-      width: 100%;
-    }
-    .notice .events .event-title h2 {
-      font-size: 30px;
-      text-align: center;
-    }
-    .notice .events .event-title hr {
-      width: 255px;
-      height: 3px;
-      border: none;
-      margin: 0px auto;
-    }
-    .notice .events .event-container {
-      height: 380px;
-      width: 100%;
-    }
-    .events .event-container .event-content {
-      width: 100%;
-      height: 60px;
-      margin-bottom: 10px;
-    }
-    .events .event-content .event-date-box {
-      width: 50px;
-      height: 100%;
-      background: #008800;
-      border-radius: 5px;
-      margin-top: 25px;
-    }
-    .event-content .event-date-box .event-date {
-      width: 40px;
-      height: 45px;
-      text-align: center;
-      margin: 9px auto;
-    }
-    .event-content .event-date-box .event-date span {
-      font-weight: 600;
-      font-size: 15px;
-    }
-    .event-info {
-      width: 100%;
-      height: 50px;    
-    }
-    .event-info h4 {
-      font-size: 13px;
-    }
-    .event-info p {
-      font-size: 13px;
-    }
-    .event-info span {
-      font-size: 10px;
-    }
+  .announcement .announcement-container .announcement-content {
+    width: 100%;
   }
-  
-  @media only screen and (min-width: 769px) and (max-width: 992px) {
-    .notice .announcement {
-      height: 100%;
-      width: 47%;
-    }
-    .notice .announcement .announce-header {
-      width: 100%;
-    }
-    .notice .announcement .announce-header h2 {
-      font-size: 30px;
-      text-align: center;
-    }
-    .notice .announcement .announce-header hr {
-      width: 255px;
-      height: 3px;
-      border: none;
-      margin: 0px auto;
-    }
-    .notice .announcement .announcement-container {
-      height: 380px;
-      width: 100%;
-    }
-  
-    .announcement .announcement-container .announcement-content {
-      width: 100%;
-    }
-    .announcement .announcement-container .announcement-content a {
-      font-weight: 600;
-      font-size: 13px;
-    }
-    .announcement .announcement-container .announcement-content hr {
-      width: 95%;
-      height: 1px;
-    }
+  .announcement .announcement-container .announcement-content a {
+    font-weight: 600;
+    font-size: 13px;
   }
+  .announcement .announcement-container .announcement-content hr {
+    width: 95%;
+    height: 1px;
+  }
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import Home_Slider from "./home/Home_Slider";
-import AnnouncementEvent from "./home/Announcements-Events";
+import Notice from "./home/Notice";
 import MissionVision from "./home/Mission-Vision";
 import Home_Swiper from "./home/Swiper";
 
@@ -9,7 +9,7 @@ const Home = () => {
     <>
       <Home_Slider />
       <Home_Swiper />
-      <AnnouncementEvent />
+      <Notice />
       <MissionVision />
     </>
   );
