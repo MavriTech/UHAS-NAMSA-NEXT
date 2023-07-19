@@ -731,15 +731,18 @@ body {
     width: 100%;
     padding: 0 20px;
   }
+  
   .header .logo .logo-image img {
     width: 58px;
     height: 58px;
+    margin-left: 250px;
   }
   .header .logo .logo-text h2 {
     width: 255px;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
+    margin-left: 10px;
   }
 }
 
