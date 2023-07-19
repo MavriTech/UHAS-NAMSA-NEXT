@@ -34,10 +34,10 @@
   cursor: pointer;
 }
 
-.media-header .media-header-links .header-link a:active {
+.media-header .media-header-links .header-link:active {
   background-color: #fff;
   border: 1px solid black;
 }
-.media-header .media-header-links .header-link:hover a{
+.media-header .media-header-links .header-link:hover {
   font-size: 23px;
 }

@@ -78,7 +78,6 @@ const AkwaabaImages = () => {
           </div>
         ))}
       </div>
-
       <div
         className="popup-image-view"
         style={{ display: file ? "block" : "none" }}
