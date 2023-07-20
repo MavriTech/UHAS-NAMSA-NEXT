@@ -4,10 +4,10 @@ import "@styles/leadership.css";
 // import Nav from "@components/Nav";
 // import Footer from "@components/Footer";
 
-export const metadata = {
-  title: "Executives-NAMSA",
-  description: "Nursing and Midwifery Student's Association",
-};
+// export const metadata = {
+//   title: "Executives-NAMSA",
+//   description: "Nursing and Midwifery Student's Association",
+// };
 const LeadershipPage = () => {
   useEffect(() => {
     // A List of  Executives
@@ -27,7 +27,8 @@ const LeadershipPage = () => {
       {
         name: "Essilfie Prince Bondzie",
         position: "Vice President ",
-        imageSource: "/images/executives_img/VICE PRESIDENTWELFARE COMMITEE CHAIRPERSON.jpg",
+        imageSource:
+          "/images/executives_img/VICE PRESIDENTWELFARE COMMITEE CHAIRPERSON.jpg",
         bio: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus iusto dolore tenetur porro quae nobis expedita commodi optio perferendis et fuga ipsa eaque explicabo ipsum harum quia blanditiis sint, consequatur cum culpa enim tempore eum reprehenderit fugiat. Nulla impedit quibusdam repudiandae? Iste a saepe quisquam suscipit eveniet vitae assumenda fuga! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque sint quis corrupti ratione culpa ad quasi, eveniet dolorem odio sequi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt consectetur quasi autem, omnis ratione similique ea dolorem",
         socials: {
           Facebook: { imgSrc: "/icons/facebook.png", href: "#" },
