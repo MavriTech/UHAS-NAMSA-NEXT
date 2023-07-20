@@ -79,6 +79,9 @@ const Footer = () => {
                 <li>
                   <a href="https://www.bing.com/maps?osid=c2595a74-afa3-47db-b3dc-c14d0f8c4991&cp=6.601603~0.480223&lvl=16&pi=0&imgid=ccb07856-d86f-4535-b3ee-fd417e8a399a&v=2&sV=2&form=S00027" target="_blank">Location</a>
                 </li>
+                <li>
+                  <a href="/admin/signin">Admin</a>
+                </li>
               </ul>
             </div>
           </div>
