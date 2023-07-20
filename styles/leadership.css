@@ -99,6 +99,7 @@
   margin-top: -20px;
 }
 .executives .profile-description p {
+  position: relative;
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 400;
@@ -120,24 +121,25 @@
 .executives .star img {
   width: 1.3rem;
 }
-.executive button{
+.executive button {
   position: absolute;
-  right: 1%;
-  bottom: 10%;
+  right: 2%;
+  bottom: -1%;
   color: #4a6985;
+  font-size: 10px;
   background: white;
   border-radius: 4px;
   border: 1px solid #4a6985;
   padding: 3px;
   cursor: pointer;
 }
-.executive button:hover{
+.executive button:hover {
   color: white;
   background: #4a6985;
 }
 
 @media only screen and (max-width: 476px) {
-  .leaders{
+  .leaders {
     margin-top: 40px;
   }
   .leaders h1 {
@@ -202,6 +204,18 @@
   .executives .star img {
     width: 0.5rem;
   }
+  .executive button {
+    position: absolute;
+    /* right: 2.5%;
+    bottom: 4%; */
+    color: #4a6985;
+    background: white;
+    border-radius: 4px;
+    border: 1px solid #4a6985;
+    padding: 1px;
+    cursor: pointer;
+    font-size: 5px;
+  }
 }
 
 @media only screen and (min-width: 476px) and (max-width: 578px) {
@@ -264,6 +278,19 @@
     font-family: Montserrat;
     font-size: 8px;
   }
+  .executive button {
+    position: absolute;
+    right: 2%;
+    bottom: -1.7%;
+    color: #4a6985;
+    font-size: 5px;
+    background: white;
+    border-radius: 3px;
+    border: 1px solid #4a6985;
+    padding: 1.5px;
+    cursor: pointer;
+  }
+  
 
   .executives .star img {
     width: 0.5rem;
@@ -335,6 +362,19 @@
     font-family: Montserrat;
     font-size: 10px;
   }
+  .executive button {
+    position: absolute;
+    right: .7%;
+    bottom: -1%;
+    color: #4a6985;
+    font-size: 5px;
+    background: white;
+    border-radius: 3px;
+    border: 1px solid #4a6985;
+    padding: 1.5px;
+    cursor: pointer;
+  }
+
   .executives .star {
     position: absolute;
     left: 33.2%;

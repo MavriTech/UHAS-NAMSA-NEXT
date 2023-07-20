@@ -33,13 +33,17 @@
   backdrop-filter: blur(5px);
   z-index: 2000;
 }
-.popup-image-view img {
+.popup-image-view .popup-image {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 65%;
+  height: 75%;
   border-radius: 3px;
+}
+.popup-image-view .popup-image img {
+  height: 100%;
+  overflow: hidden;
   object-fit: cover;
 }
 .popup-image-view span {
@@ -50,7 +54,7 @@
   width: 30px;
   z-index: 200;
 }
-.popup-image-view span > img {
+.popup-image-view span img {
   height: 100%;
   width: 100%;
   cursor: pointer;
@@ -58,7 +62,7 @@
   filter: brightness(0) invert(1);
   transition: 0.7 ease;
 }
-.popup-image-view span:hover > img {
+.popup-image-view .popup-image span:hover img {
   height: 110%;
   width: 110%;
 }

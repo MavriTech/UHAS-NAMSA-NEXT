@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import "@styles/slide.css";
 import Image from "next/image";
-import useSWR from "swr";
+// import useSWR from "swr";
 
 const Slides = () => {
   const [data, setData] = useState([]);

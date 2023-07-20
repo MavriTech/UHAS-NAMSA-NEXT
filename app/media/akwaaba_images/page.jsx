@@ -64,7 +64,7 @@ const AkwaabaImages = () => {
 
   return (
     <>
-      <MediaHeader />
+      <MediaHeader EActiveStyle="c-active" />
       <div className="image-container">
         {akwaabaImages.map((file, index) => (
           <div
@@ -96,9 +96,6 @@ const AkwaabaImages = () => {
         <img src={file?.path} alt="" />
       </div>
     </>
-    // <div className="main-container">
-
-    /* </div> */
   );
 };
 
