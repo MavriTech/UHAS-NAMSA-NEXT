@@ -100,9 +100,6 @@ const Nav = () => {
                       <a href="/events/sports">Sports</a>
                     </li>
                     <li className="dropdown-links">
-                      <a href="#">Picnics</a>
-                    </li>
-                    <li className="dropdown-links">
                       <a href="#">SRC WEEK</a>
                     </li>
                     <li className="dropdown-links">
@@ -127,7 +124,7 @@ const Nav = () => {
                       <a href="#">Past Questions</a>
                     </li>
                     <li className="dropdown-links">
-                      <a href="/components/slide.html">Lecture Slides</a>
+                      <a href="/resources/courses">Lecture Slides</a>
                     </li>
                     <li className="dropdown-links">
                       <a href="#">Academic Timetable</a>
@@ -152,22 +149,6 @@ const Nav = () => {
                     </li>
                     <li className="dropdown-links">
                       <a href="#">Committee Members</a>
-                    </li>
-                    
-                    <li className="dropdown-links">
-                      <a href="#">NAMSA Access</a>
-                    </li>
-                    <li className="dropdown-links">
-                      <a href="#">Jobs</a>
-                    </li>
-                    <li className="dropdown-links">
-                      <a href="#">Courses offered in UHAS</a>
-                    </li>
-                    <li className="dropdown-links">
-                      <a href="#">Root of NAMSA</a>
-                    </li>
-                    <li className="dropdown-links">
-                      <a href="#">Rules and Regulation</a>
                     </li>
                   </ul>
                 </div>
@@ -214,8 +195,8 @@ const Nav = () => {
               <div className="navlinks">
                 <ul>
                   <li className="navlink-content droplink">
-                    <a href="#" id="contact">
-                      CONTACT{" "}
+                    <a href="/media/akwaaba_images" id="contact">
+                      MEDIA{" "}
                       <i className="fa-solid fa-caret-down drop-icon"></i>
                     </a>
                   </li>
@@ -224,28 +205,16 @@ const Nav = () => {
                 <div className="dropdown">
                   <ul className="dropdown-content">
                     <li className="dropdown-links">
-                      <a href="#">Organization</a>
+                      <a href="/announcement">Announcements</a>
                     </li>
                     <li className="dropdown-links">
-                      <a href="#">Facts and Figures</a>
+                      <a href="#">Upcoming Events</a>
                     </li>
                     <li className="dropdown-links">
-                      <a href="#">NAMSA Executives</a>
+                      <a href="#">Entertainment</a>
                     </li>
                     <li className="dropdown-links">
-                      <a href="#">NAMSA Access</a>
-                    </li>
-                    <li className="dropdown-links">
-                      <a href="#">Jobs</a>
-                    </li>
-                    <li className="dropdown-links">
-                      <a href="#">Courses offered in UHAS</a>
-                    </li>
-                    <li className="dropdown-links">
-                      <a href="#">Root of NAMSA</a>
-                    </li>
-                    <li className="dropdown-links">
-                      <a href="#">Rules and Regulation</a>
+                      <a href="#">Gallery</a>
                     </li>
                   </ul>
                 </div>
