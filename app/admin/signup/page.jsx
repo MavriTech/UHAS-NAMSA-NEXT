@@ -10,21 +10,31 @@ const SignInPage = () => {
         <div className="form-container">
           <form action="" className="form">
             <div className="sign-options">
-              <Link className="sign " href="/admin/signup">
+              <Link className="sign s-active" href="/admin/signup">
                 Sign Up
               </Link>
-              <Link className="sign s-active" href="/admin/signin">
+              <Link className="sign" href="/admin/signin">
                 Sign In
               </Link>
             </div>
             <div className="form-below">
               <div className="input-wrapper">
                 <div className="input-left">
+                  <Image src="/icons/User.png" width={15} height={18} />
+                  <input
+                    className="admin-input"
+                    type="text"
+                    placeholder="Fullname"
+                  />
+                </div>
+              </div>
+              <div className="input-wrapper">
+                <div className="input-left">
                   <Image src="/icons/User2.png" width={15} height={18} />
                   <input
                     className="admin-input"
                     type="text"
-                    placeholder="Username or email"
+                    placeholder="Username"
                   />
                 </div>
               </div>
@@ -43,12 +53,27 @@ const SignInPage = () => {
                 </div>
                 <Image src="/icons/Eye.png" width={15} height={18} />
               </div>
+              <div className="input-wrapper">
+                <div className="input-left">
+                  <Image
+                    src="/icons/Reset-password.png"
+                    width={15}
+                    height={18}
+                  />
+                  <input
+                    className="admin-input"
+                    type="password"
+                    placeholder="Confirm password"
+                  />
+                </div>
+                <Image src="/icons/Eye.png" width={15} height={18} />
+              </div>
 
-              <span className="forgot">Forgot Password?</span>
-
-              <button className="sign-btn">SIGN IN</button>
-
-              <span className="forgot">Sign in to assume admin privileges</span>
+              <span className="secret-code">
+                Enter secret admin sign up code
+              </span>
+              <input className="secret-input" type="text" />
+              <button className="sign-btn">SIGN UP</button>
             </div>
           </form>
           <Image src="/icons/admin-panel.png" width={350} height={500} />
