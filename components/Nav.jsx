@@ -205,7 +205,7 @@ const Nav = () => {
                 <div className="dropdown">
                   <ul className="dropdown-content">
                     <li className="dropdown-links">
-                      <a href="/announcement">Announcements</a>
+                      <a href="/[id]">Announcements</a>
                     </li>
                     <li className="dropdown-links">
                       <a href="#">Upcoming Events</a>
@@ -257,12 +257,6 @@ const Nav = () => {
                     <ul className="dropdown-content">
                       <li className="dropdown-links">
                         <a href="/events/sports">Sports</a>
-                      </li>
-                      <li className="dropdown-links">
-                        <a href="#">Picnics</a>
-                      </li>
-                      <li className="dropdown-links">
-                        <a href="#">SRC WEEK</a>
                       </li>
                       <li className="dropdown-links">
                         <a href="#">Voting</a>
