@@ -520,6 +520,10 @@ body {
     scroll-behavior: smooth;
     height: 70%;
   }
+
+  .navlink-content .dropdown {
+    position: static;
+  }
   .navbar .nav .navlinks {
     display: flex;
     justify-content: space-evenly;
