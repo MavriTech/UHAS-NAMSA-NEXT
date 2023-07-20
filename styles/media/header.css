@@ -1,43 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap");
-* {
-  text-decoration: none;
-  list-style: none;
-  color: black;
-}
+
 .media-header-container {
   width: 100%;
   margin-top: 15px;
 }
 .media-header {
-  width: 537px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
   border-radius: 20px;
   background: #d9d7d7;
-  padding: 2px 10px;
+  padding: 0;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
   margin: 0 auto;
 }
-.media-header .media-header-links {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.media-header span {
   height: 100%;
-  width: 100%;
-}
-.media-header .media-header-links .header-link {
-  height: 100%;
+  padding: 15px;
+  cursor: pointer;
   font-size: 20px;
   font-family: Montserrat;
   font-weight: 500;
-  padding: 10px 20px;
   transition: 0.5s;
-  border-radius: 20px;
-  cursor: pointer;
 }
-
-.media-header .media-header-links .header-link:active {
-  background-color: #fff;
+.media-header span.c-active {
   border: 1px solid black;
+  border-radius: 8px;
+  background-color: #fff;
 }
-.media-header .media-header-links .header-link:hover {
-  font-size: 23px;
+.media-header span a {
+  text-decoration: none;
+  color: black;
+}
+.media-header span:hover {
+  transform: scale(1.1);
 }

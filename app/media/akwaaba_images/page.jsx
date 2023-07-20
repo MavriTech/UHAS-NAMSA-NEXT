@@ -64,7 +64,7 @@ const AkwaabaImages = () => {
 
   return (
     <>
-      <MediaHeader />
+      <MediaHeader EActiveStyle="c-active" />
       <div className="image-container">
         {akwaabaImages.map((file, index) => (
           <div
@@ -78,6 +78,7 @@ const AkwaabaImages = () => {
           </div>
         ))}
       </div>
+
       <div
         className="popup-image-view"
         style={{ display: file ? "block" : "none" }}
@@ -95,9 +96,6 @@ const AkwaabaImages = () => {
         <img src={file?.path} alt="" />
       </div>
     </>
-    // <div className="main-container">
-
-    /* </div> */
   );
 };
 
