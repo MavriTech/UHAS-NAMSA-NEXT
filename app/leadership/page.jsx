@@ -112,6 +112,10 @@ const LeadershipPage = () => {
       const executiveBio = document.createElement("p");
       executiveBio.textContent = leader.bio;
       profileDescription.appendChild(executiveBio);
+      const button = document.createElement("button");
+      button.type = "button";
+      button.textContent = "Read More";
+      executiveBio.appendChild(button);
       executive.appendChild(profileDescription);
 
       const socials = document.createElement("div");
@@ -157,10 +161,7 @@ const LeadershipPage = () => {
       star.appendChild(starImage);
       executive.appendChild(star);
 
-      const button = document.createElement("button");
-      button.type = "button";
-      button.textContent = "Read More";
-      executive.appendChild(button);
+     
       return executive;
     }
 
@@ -215,13 +216,14 @@ const LeadershipPage = () => {
                   dolorem odio sequi?Lorem ipsum, dolor sit amet consectetur
                   adipisicing elit. Deserunt consectetur quasi autem, omnis
                   ratione similique ea dolorem culpa aliquam eius.
+                  <button type="button">Read More</button>
+
                 </p>
               </div>
               <div class="divider"></div>
               <div class="star">
                 <img src="/icons/Star.png" alt="" />
               </div>
-              <button type="button">Read More</button>
             </div>
             <div class="executive president">
               <div class="profile-details">
@@ -263,13 +265,14 @@ const LeadershipPage = () => {
                   dolorem odio sequi?Lorem ipsum, dolor sit amet consectetur
                   adipisicing elit. Deserunt consectetur quasi autem, omnis
                   ratione similique ea dolorem culpa aliquam eius.
+                  <button type="button">Read More</button>
                 </p>
               </div>
               <div class="divider"></div>
               <div class="star">
                 <img src="/icons/Star.png" alt="" />
               </div>
-              <button type="button">Read More</button>
+             
             </div>
           </div>
         </section>
