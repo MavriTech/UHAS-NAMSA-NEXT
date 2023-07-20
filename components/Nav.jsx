@@ -68,6 +68,7 @@ const Nav = () => {
         <div className="navbar">
           <div className="navbar-content">
             <div className="nav">
+
               <ul className="navlinks">
                 <li className="navlink-content">
                   <a href="/" id="home">
@@ -77,6 +78,7 @@ const Nav = () => {
                 <li className="navlink-content">
                   <a href="#aim-vision-section">ABOUT US</a>
                 </li>
+
 
                 <li className="navlink-content droplink">
                   <a href="#" id="events">
@@ -88,9 +90,11 @@ const Nav = () => {
                         <a href="/events/sports">Sports</a>
                       </li>
                       <li className="dropdown-links">
+
                         <a href="#">SRC WEEK</a>
                       </li>
                       <li className="dropdown-links">
+
                         <a href="#">Voting</a>
                       </li>
                     </ul>

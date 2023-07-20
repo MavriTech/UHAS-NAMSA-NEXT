@@ -3,9 +3,7 @@ import "@styles/announce-events.css";
 import Link from "next/link";
 
 async function getDate() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
-    cache: "no-store",
-  });
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts");
 
   if (!res.ok) {
     throw new Error("Failed to fetch data");
@@ -56,7 +54,7 @@ export default async function AnnouncementEvent() {
             {dataSet.map((data) => (
               <div className="announcement-content" key={data.id}>
                 <a href={`/${data.id}`}>
-                  <h3>{data.title.slice (0, 40) + "..."}</h3>
+                  <h3>{data.title.slice(0, 40) + "..."}</h3>
                   <h3>{data.body.slice(0, 50) + "..."}</h3>
                 </a>
                 <hr />
