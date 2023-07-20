@@ -126,7 +126,6 @@ span {
 }
 .announcement .announcement-container .announcement-content a {
   font-weight: 600;
-
   font-size: 15px;
   line-height: 15px;
   color: #000000;
@@ -173,13 +172,14 @@ span {
   .notice .events .event-container {
     height: 80%;
     width: 90%;
+    overflow-x: hidden;
     margin: 0 auto;
     overflow-x: hidden;
   }
   .events .event-container .event-content {
     width: 98%;
     height: 60px;
-    margin-bottom: 12px;
+    margin-bottom: 8px 0;
   }
   .events .event-content .event-date-box {
     width: 68px;
@@ -219,6 +219,7 @@ span {
   .notice .announcement .announce-header {
     width: 100%;
     height: 59px;
+    
   }
   .notice .announcement .announce-header h2 {
     font-weight: 700;
@@ -230,6 +231,7 @@ span {
     height: 2px;
   }
   .notice .announcement .announcement-container {
+   
     height: 60%;
     width: 90%;
     margin: 0 auto;

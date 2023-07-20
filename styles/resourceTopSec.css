@@ -50,6 +50,22 @@ body {
   padding-bottom: 3rem;
 }
 
+.top-left-img,
+.top-right-img {
+  width: 100%;
+  object-fit: contain;
+  animation: move 3s infinite ease alternate;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(-15px);
+  }
+  to {
+    transform: translateY(0) scale(1.03);
+  }
+}
+
 .filter-container {
   position: relative;
 }
@@ -99,10 +115,6 @@ body {
   box-shadow: var(--box-shadow);
   /* padding: 10px; */
 }
-
-/* #filterOptions:hover {
-  display: block;
-} */
 
 #filter-dropdown {
   list-style-type: none;

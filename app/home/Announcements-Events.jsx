@@ -3,12 +3,14 @@ import "@styles/announce-events.css";
 import Link from "next/link";
 
 async function getDate() {
-  const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
+    cache: "no-store",
+  });
 
-  if (!response.ok) {
+  if (!res.ok) {
     throw new Error("Failed to fetch data");
   }
-  return response.json();
+  return res.json();
 }
 
 export default async function AnnouncementEvent() {

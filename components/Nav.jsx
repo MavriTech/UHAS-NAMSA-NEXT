@@ -100,9 +100,6 @@ const Nav = () => {
                       <a href="/events/sports">Sports</a>
                     </li>
                     <li className="dropdown-links">
-                      <a href="#">Picnics</a>
-                    </li>
-                    <li className="dropdown-links">
                       <a href="#">SRC WEEK</a>
                     </li>
                     <li className="dropdown-links">
@@ -127,7 +124,7 @@ const Nav = () => {
                       <a href="#">Past Questions</a>
                     </li>
                     <li className="dropdown-links">
-                      <a href="/components/slide.html">Lecture Slides</a>
+                      <a href="/resources/courses">Lecture Slides</a>
                     </li>
                     <li className="dropdown-links">
                       <a href="#">Academic Timetable</a>
@@ -152,22 +149,6 @@ const Nav = () => {
                     </li>
                     <li className="dropdown-links">
                       <a href="#">Committee Members</a>
-                    </li>
-
-                    <li className="dropdown-links">
-                      <a href="#">NAMSA Access</a>
-                    </li>
-                    <li className="dropdown-links">
-                      <a href="#">Jobs</a>
-                    </li>
-                    <li className="dropdown-links">
-                      <a href="#">Courses offered in UHAS</a>
-                    </li>
-                    <li className="dropdown-links">
-                      <a href="#">Root of NAMSA</a>
-                    </li>
-                    <li className="dropdown-links">
-                      <a href="#">Rules and Regulation</a>
                     </li>
                   </ul>
                 </div>
@@ -214,11 +195,29 @@ const Nav = () => {
               <div className="navlinks">
                 <ul>
                   <li className="navlink-content droplink">
-                    <a href="/media/akwaaba_images" id="media">
-                      MEDIA
+                    <a href="#" id="contact">
+                      MEDIA{" "}
+                      <i className="fa-solid fa-caret-down drop-icon"></i>
                     </a>
                   </li>
                 </ul>
+
+                <div className="dropdown">
+                  <ul className="dropdown-content">
+                    <li className="dropdown-links">
+                      <a href="/announcement">Announcements</a>
+                    </li>
+                    <li className="dropdown-links">
+                      <a href="#">Upcoming Events</a>
+                    </li>
+                    <li className="dropdown-links">
+                      <a href="#">Entertainment</a>
+                    </li>
+                    <li className="dropdown-links">
+                      <a href="/media/akwaaba_images">Gallery</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -376,7 +375,7 @@ const Nav = () => {
                 <div className="navlinks">
                   <ul>
                     <li className="navlink-content droplink">
-                    <a href="/media/akwaaba_images" id="media">
+                    <a href="#" id="media">
                         MEDIA
                       </a>
                     </li>
