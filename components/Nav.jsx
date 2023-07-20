@@ -196,8 +196,7 @@ const Nav = () => {
                 <ul>
                   <li className="navlink-content droplink">
                     <a href="/media/akwaaba_images" id="contact">
-                      MEDIA{" "}
-                      <i className="fa-solid fa-caret-down drop-icon"></i>
+                      MEDIA <i className="fa-solid fa-caret-down drop-icon"></i>
                     </a>
                   </li>
                 </ul>
@@ -205,7 +204,7 @@ const Nav = () => {
                 <div className="dropdown">
                   <ul className="dropdown-content">
                     <li className="dropdown-links">
-                      <a href="/[id]">Announcements</a>
+                      <a href="/">Announcements</a>
                     </li>
                     <li className="dropdown-links">
                       <a href="#">Upcoming Events</a>

@@ -397,6 +397,11 @@ marquee h3 {
   display: block;
   font-size: 12px;
   color: #6a6a6a;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  white-space: wrap;
+  overflow: hidden;
 }
 
 .cards .card .card-body .card-discription span:nth-child(2) {
