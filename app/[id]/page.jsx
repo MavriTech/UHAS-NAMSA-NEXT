@@ -4,9 +4,12 @@ import "@styles/announcements.css";
 import Link from "next/link";
 
 async function getData() {
-  const res = await fetch("https://uhas-backend.onrender.com/api/announcements", {
-    cache: "no-store",
-  });
+  const res = await fetch(
+    "https://uhas-backend.onrender.com/api/announcements",
+    {
+      cache: "no-store",
+    }
+  );
 
   if (!res.ok) {
     throw new Error("Failed to fetch data");
@@ -53,11 +56,6 @@ const Announcement = ({ params }) => {
     fetchData();
   }, [params.id]);
 
-  // Render "Loading..." or a message while fetching the data
-  if (!allAnnouncements.length) {
-    return <div>Loading...</div>;
-  }
-
   return (
     <div>
       {/* Display the specific announcement if available */}
@@ -85,7 +83,10 @@ const Announcement = ({ params }) => {
           <h2>Announcements</h2>
           <div className="announcement-container">
             {allAnnouncements.map((announcement) => (
-              <div className="announcement-content" key={announcement.createdAt}>
+              <div
+                className="announcement-content"
+                key={announcement.createdAt}
+              >
                 <Link href={`/${announcement.createdAt}`}>
                   {/* Wrap the content inside the <Link> without using <a> tag */}
                   <div>
