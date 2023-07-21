@@ -1,209 +1,111 @@
-.announcement-logo img {
-  height: 500px;
+.content-image{
   width: 100%;
+  height: 500px;
 }
-.headline-announce {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  height: 30rem;
-  margin: 0 auto;
-}
-.headline-announce .headline-container {
+.content-image img{
+  width: 100%;
   height: 100%;
-  width: 45%;
 }
-.headline-announce .heading {
-  margin-top: 10px;
-  width: 400px;
-  /* height: 69px; */
-  font-size: 25px;
-  color: #4a6985;
+.announcement-logo{
+  width: 100px;
+  object-fit: cover;
+  position: fixed;
+  height: 200px;
+}
+.announcement-details{
+  width: 100%;
+  height: 800px;
+  align-items: center;
+  justify-content: center;
 }
 
-.headline-announce .heading .headline {
-  font-size: 20px;
+.announcement-content{
+  width: 90%;
+  height: 300px;
+  padding-left: 40px;
+  
+}
+.announcement-container{
   width: 100%;
-  color: black;
-  margin-top: 10px;
-  align-items: center;
+  
 }
-.headline-announce .announcements {
-  height: 100%;
-  width: 45%;
-}
-.headline-announce .announcements .announcement-header {
-  flex-direction: column;
-  width: 400px;
-}
-.headline-announce .announcements .announcement-header h2 {
-  font-weight: 400;
-  font-size: 25px;
+.announcement-details .announcement-content .announcement-container h3{
+  font-weight: 450;
+  font-size: 30px;
   text-align: center;
-  line-height: 49px;
   color: #4a6985;
 }
-.headline-announce .announcements .announcement-header hr {
-  width: 300px;
-  height: 2px;
+.announcement-details .announcements{
+  width: 100%;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+}
+.announcement-details .annoucements .announcements-header {
+  flex-direction: column;
+  width: 50%;
+  height: 69px;
+}
+.announcement-details .announcements .announcements-header h2{
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  color: #4a6985;
+}
+.announcement-details .announcements .announcements-header hr{
+  width: 20%;
+  height: 3px;
   background-color: #4a6985;
   border-radius: 53px;
   border: none;
   margin: 3px auto;
 }
-.headline-announce .announcements .announcement-header .announcement-container {
-  height: 400px;
-  width: 100%;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
+.announcement-details hr {
+  width: 90%;
+  height: 2px;
 }
-.headline-announce
-  .announcements
-  .announcement-header
-  .announcement-container
-  .announcement-content {
+.announcement-details .announcements .announcements-container{
+  height: 400px;
+  width: 50%;
+  overflow-y: scroll;
+  margin-inline: auto;
+  scroll-behavior: smooth;
+  align-items: center;
+  justify-content: center;
+}
+.announcement-details .announcements .announcements-container .announcement-content{
   width: 95%;
   height: 40px;
   margin: 5px auto;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  white-space: wrap;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
 }
-.headline-announce
-  .announcements
-  .announcement-header
-  .announcement-container
-  .announcement-content
-  a {
+.announcement-details .announcements .announcements-container .announcements-content a{
   font-weight: 600;
-  font-size: 10px;
-  line-height: 15px;
-  color: #000000;
+  font-size: 15px;
+  color: black;
   text-decoration: none;
 }
-.headline-announce
-  .announcements
-  .announcement-header
-  .announcement-container
-  .announcement-content
-  a:hover {
+.announcement-details .announcements .announcements-container .announcements-content a p{
+  font-weight: 600;
+  font-size: 10px;
+  color: black;
+  text-decoration: none;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  white-space: wrap;
+  overflow: hidden;
+}
+.announcement-details .announcements .announcements-container .announcements-content a:hover{
   color: #4a6985;
 }
-.headline-announce
-  .announcements
-  .announcement-header
-  .announcement-container
-  .announcement-content
-  hr {
-  width: 100%;
-  height: 2px;
-  background-color: #4a6985;
-  border: none;
+.announcement-details .announcements .announcements-container .announcements-content p:hover{
+  color: #4a6985;
 }
 
-/* responsiveness for mobile devices start */
-@media screen and (max-width: 567px) {
-  .announcement-logo img {
-    height: 200px;
-    width: 100%;
-    margin-top: 50px;
-  }
-  .headline-announce {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    margin: 0;
-    padding: 10px;
-  }
-  .headline-announce .headline-container {
-    width: 100%;
-  }
-  .headline-announce .heading {
-    margin-top: 10px;
-    width: 100%;
-    font-size: 11px;
-    color: #4a6985;
-  }
-
-  .headline-announce .heading .headline {
-    font-size: 11px;
-    width: 100%;
-    color: black;
-    margin-top: 10px;
-  }
-  .headline-announce .announcements {
-    height: 100%;
-    width: 100%;
-  }
-  .headline-announce .announcements .announcement-header {
-    width: 100%;
-    /* height: 350px; */
-    margin: 20px 0;
-  }
-  .headline-announce .announcements .announcement-header h2 {
-    font-weight: 500;
-    font-size: 16px;
-    text-align: center;
-    line-height: 30px;
-    text-decoration: underline;
-    margin-bottom: 20px;
-
-    color: #4a6985;
-  }
-  .headline-announce .announcements .announcement-header hr {
-    width: 9%;
-    height: 1px;
-    background-color: #4a6985;
-    border-radius: 53px;
-    border: none;
-    margin: 3px auto;
-  }
-  .headline-announce
-    .announcements
-    .announcement-header
-    .announcement-container {
-    height: 350px;
-    width: 100%;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-  }
-  .headline-announce
-    .announcements
-    .announcement-header
-    .announcement-container
-    .announcement-content {
-    width: 95%;
-    height: 40px;
-    margin: 5px auto;
-  }
-  .headline-announce
-    .announcements
-    .announcement-header
-    .announcement-container
-    .announcement-content
-    a {
-    font-weight: 600;
-    font-size: 10px;
-    line-height: 15px;
-    color: #000000;
-    text-decoration: none;
-    
-  }
-  .headline-announce
-    .announcements
-    .announcement-header
-    .announcement-container
-    .announcement-content
-    a:hover {
-    color: #4a6985;
-  }
-  .headline-announce
-    .announcements
-    .announcement-header
-    .announcement-container
-    .announcement-content
-    hr {
-    width: 100%;
-    height: 1px;
-    background-color: #4a6985;
-    border: none;
-  }
-}

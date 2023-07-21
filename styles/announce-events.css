@@ -65,6 +65,8 @@
 .event-content .event-date-box .event-date span {
   font-weight: 600;
   font-size: 18px;
+  position: relative;
+  top: 8px;
   color: #ffffff;
 }
 .event-info {
@@ -79,6 +81,14 @@
 p,
 span {
   font-size: 15px;
+  
+}
+.event-info h4,
+p,
+span {
+  font-size: 15px;
+  position: relative;
+  top: 2px;
 }
 .event-info p {
   font-size: 14px;
