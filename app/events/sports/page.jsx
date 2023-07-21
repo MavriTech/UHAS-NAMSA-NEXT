@@ -12,7 +12,7 @@ export default function Sports() {
   return (
     <>
       <div classNameName="main-container">
-        {/* Image Slider Section Begins */}
+        Image Slider Section Begins
         <div className="slider-wrapper">
           <div className="slider-shadow"></div>
           <div className="slider">

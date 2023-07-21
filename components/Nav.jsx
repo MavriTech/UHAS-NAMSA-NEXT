@@ -53,22 +53,21 @@ const Nav = () => {
           </div>
         </div>
         <div className="menu" onClick={navHandler}>
-          <img src="/icons/menu.png" />
-          <img
-            src="/L-images/close.png"
-            alt=""
-            width="20rem"
-            className="close"
-            id="closeIcon"
-            // style="display: none"
-          />
+          {isVisible ? (
+            <img
+              src="/L-images/close.png"
+
+              // style="display: none"
+            />
+          ) : (
+            <img src="/icons/menu.png" />
+          )}
         </div>
       </div>
       {isLargeScreen ? (
         <div className="navbar">
           <div className="navbar-content">
             <div className="nav">
-
               <ul className="navlinks">
                 <li className="navlink-content">
                   <a href="/" id="home">
@@ -78,7 +77,6 @@ const Nav = () => {
                 <li className="navlink-content">
                   <a href="#aim-vision-section">ABOUT US</a>
                 </li>
-
 
                 <li className="navlink-content droplink">
                   <a href="#" id="events">
@@ -90,11 +88,9 @@ const Nav = () => {
                         <a href="/events/sports">Sports</a>
                       </li>
                       <li className="dropdown-links">
-
                         <a href="#">SRC WEEK</a>
                       </li>
                       <li className="dropdown-links">
-
                         <a href="#">Voting</a>
                       </li>
                     </ul>
@@ -187,7 +183,7 @@ const Nav = () => {
                         <a href="#">Entertainment</a>
                       </li>
                       <li className="dropdown-links">
-                        <a href="/media/akwaaba_images">Gallery</a>
+                        <a href="/media">Gallery</a>
                       </li>
                     </ul>
                   </div>
@@ -199,132 +195,130 @@ const Nav = () => {
       ) : (
         isVisible && (
           <div className="navbar">
-          <div className="navbar-content">
-            <div className="nav">
-              <ul className="navlinks">
-                <li className="navlink-content">
-                  <a href="/" id="home">
-                    HOME
-                  </a>
-                </li>
-                <li className="navlink-content">
-                  <a href="#aim-vision-section">ABOUT US</a>
-                </li>
+            <div className="navbar-content">
+              <div className="nav">
+                <ul className="navlinks">
+                  <li className="navlink-content">
+                    <a href="/" id="home">
+                      Home
+                    </a>
+                  </li>
+                  <li className="navlink-content">
+                    <a href="#aim-vision-section">About Us</a>
+                  </li>
 
-                <li className="navlink-content droplink">
-                  <a href="#" id="events">
-                    EVENTS <i className="fa-solid fa-caret-down drop-icon"></i>
-                  </a>
-                  <div className="dropdown">
-                    <ul className="dropdown-content">
-                      <li className="dropdown-links">
-                        <a href="/events/sports">Sports</a>
-                      </li>
-                      <li className="dropdown-links">
-                        <a href="#">SRC WEEK</a>
-                      </li>
-                      <li className="dropdown-links">
-                        <a href="#">Voting</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
+                  <li className="navlink-content droplink">
+                    <a href="#" id="events">
+                      Events{" "}
+                      <i className="fa-solid fa-caret-down drop-icon"></i>
+                    </a>
+                    <div className="dropdown">
+                      <ul className="dropdown-content">
+                        <li className="dropdown-links">
+                          <a href="/events/sports">Sports</a>
+                        </li>
+                        <li className="dropdown-links">
+                          <a href="#">Voting</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
 
-                <li className="navlink-content droplink">
-                  <a href="/resources" id="resources">
-                    RESOURCES
-                    <i className="fa-solid fa-caret-down drop-icon"></i>
-                  </a>
-                  <div className="dropdown">
-                    <ul className="dropdown-content" k>
-                      <li className="dropdown-links">
-                        <a href="#">Past Questions</a>
-                      </li>
-                      <li className="dropdown-links">
-                        <a href="/resources/courses">Lecture Slides</a>
-                      </li>
-                      <li className="dropdown-links">
-                        <a href="#">Academic Timetable</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
+                  <li className="navlink-content droplink">
+                    <a href="#" id="resources">
+                      Resources
+                      <i className="fa-solid fa-caret-down drop-icon"></i>
+                    </a>
+                    <div className="dropdown">
+                      <ul className="dropdown-content" k>
+                        <li className="dropdown-links">
+                          <a href="#">Past Questions</a>
+                        </li>
+                        <li className="dropdown-links">
+                          <a href="/resources/courses">Lecture Slides</a>
+                        </li>
+                        <li className="dropdown-links">
+                          <a href="#">Academic Timetable</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
 
-                <li className="navlink-content droplink">
-                  <a href="#" id="leadership">
-                    LEADERSHIP
-                    <i className="fa-solid fa-caret-down drop-icon"></i>
-                  </a>
-                  <div className="dropdown">
-                    <ul className="dropdown-content">
-                      <li className="dropdown-links">
-                        <a href="/leadership">Executives</a>
-                      </li>
-                      <li className="dropdown-links">
-                        <a href="#">Committee Members</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li className="navlink-content droplink">
-                  <a href="#" id="updates">
-                    ADMISSION
-                    <i className="fa-solid fa-caret-down drop-icon"></i>
-                  </a>
-                  <div className="dropdown">
-                    <ul className="dropdown-content">
-                      <li className="dropdown-links">
-                        <a
-                          href="https://www.uhas.edu.gh/en/admissions/how-to-apply.html"
-                          target="_blank"
-                        >
-                          How to Apply
-                        </a>
-                      </li>
-                      <li className="dropdown-links">
-                        <a
-                          href="https://www.uhas.edu.gh/en/admissions/entry-requirements.html"
-                          target="_blank"
-                        >
-                          Entry Requirements
-                        </a>
-                      </li>
-                      <li className="dropdown-links">
-                        <a
-                          href="http://www.uhasonline.com/admissions/"
-                          target="_blank"
-                        >
-                          Apply Now
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li className="navlink-content droplink">
-                  <a href="#" id="media">
-                    MEDIA <i className="fa-solid fa-caret-down drop-icon"></i>
-                  </a>
-                  <div className="dropdown">
-                    <ul className="dropdown-content">
-                      <li className="dropdown-links">
-                        <a href="/[id]">Announcements</a>
-                      </li>
-                      <li className="dropdown-links">
-                        <a href="#">Upcoming Events</a>
-                      </li>
-                      <li className="dropdown-links">
-                        <a href="#">Entertainment</a>
-                      </li>
-                      <li className="dropdown-links">
-                        <a href="/media/akwaaba_images">Gallery</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
+                  <li className="navlink-content droplink">
+                    <a href="#" id="leadership">
+                      Leadership
+                      <i className="fa-solid fa-caret-down drop-icon"></i>
+                    </a>
+                    <div className="dropdown">
+                      <ul className="dropdown-content">
+                        <li className="dropdown-links">
+                          <a href="/leadership">Executives</a>
+                        </li>
+                        <li className="dropdown-links">
+                          <a href="#">Committee Members</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li className="navlink-content droplink">
+                    <a href="#" id="updates">
+                      Admission
+                      <i className="fa-solid fa-caret-down drop-icon"></i>
+                    </a>
+                    <div className="dropdown">
+                      <ul className="dropdown-content">
+                        <li className="dropdown-links">
+                          <a
+                            href="https://www.uhas.edu.gh/en/admissions/how-to-apply.html"
+                            target="_blank"
+                          >
+                            How to Apply
+                          </a>
+                        </li>
+                        <li className="dropdown-links">
+                          <a
+                            href="https://www.uhas.edu.gh/en/admissions/entry-requirements.html"
+                            target="_blank"
+                          >
+                            Entry Requirements
+                          </a>
+                        </li>
+                        <li className="dropdown-links">
+                          <a
+                            href="http://www.uhasonline.com/admissions/"
+                            target="_blank"
+                          >
+                            Apply Now
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li className="navlink-content droplink">
+                    <a href="#" id="media">
+                      Media <i className="fa-solid fa-caret-down drop-icon"></i>
+                    </a>
+                    <div className="dropdown">
+                      <ul className="dropdown-content">
+                        <li className="dropdown-links">
+                          <a href="/[id]">Announcements</a>
+                        </li>
+                        <li className="dropdown-links">
+                          <a href="#">Upcoming Events</a>
+                        </li>
+                        <li className="dropdown-links">
+                          <a href="#">Entertainment</a>
+                        </li>
+                        <li className="dropdown-links">
+                          <a href="app/media">Gallery</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
         )
       )}
     </div>
