@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import MediaHeader from "../page";
-import "@styles/media/picnic_images.css";
+import MediaHeader from "@components/MediaHeader";
+import "@styles/media/media_images.css";
 
 const Picnic_Images = () => {
   const [file, setFile] = useState(null);
@@ -125,12 +125,7 @@ const Picnic_Images = () => {
         style={{ display: file ? "block" : "none" }}
         onClick={() => setFile(null)}
       >
-        <div className="popup-image">
-          <img src={file?.path} alt="" />
-        </div>
-        <span>
-          <img src="/L-images/close.png" alt="" onClick={() => setFile(null)} />
-        </span>
+        
       </div>
     </>
   );

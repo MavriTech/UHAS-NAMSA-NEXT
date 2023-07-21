@@ -85,8 +85,8 @@ export default function AnnouncementEvent() {
             {sortedData.map((data) => (
               <div className="announcement-content" key={data.createdAt}>
                 <Link href={`/${data.createdAt}`}>
-                  <h3>{data.title.slice(0, 40) + "..."}</h3>
-                  <p>{data.description.slice(0, 50) + "..."}</p>
+                  <h3>{data.title}</h3>
+                  <p>{data.description}</p>
                 </Link>
                 <hr />
               </div>
