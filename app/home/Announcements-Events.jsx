@@ -36,6 +36,13 @@ export default function AnnouncementEvent() {
     return <div>Loading...</div>;
   }
 
+  // Sort the dataSet in reverse order based on createdAt (most recent first)
+  const sortedData = dataSet.slice().sort((a, b) => {
+    const dateA = new Date(a.createdAt).getTime();
+    const dateB = new Date(b.createdAt).getTime();
+    return dateB - dateA;
+  });
+
   return (
     <>
       <div className="notice">
@@ -46,7 +53,7 @@ export default function AnnouncementEvent() {
             <hr />
           </div>
           <div className="event-container">
-            {dataSet.map((data) => (
+            {sortedData.map((data) => (
               <div className="event-content" key={data.createdAt}>
                 <Link href={`/${data.createdAt}`}>
                   <div className="event-date-box">
@@ -75,7 +82,7 @@ export default function AnnouncementEvent() {
             <hr />
           </div>
           <div className="announcement-container">
-            {dataSet.map((data) => (
+            {sortedData.map((data) => (
               <div className="announcement-content" key={data.createdAt}>
                 <Link href={`/${data.createdAt}`}>
                   <h3>{data.title.slice(0, 40) + "..."}</h3>
