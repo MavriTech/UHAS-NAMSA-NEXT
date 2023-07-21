@@ -1,7 +1,7 @@
 /* Mission and Vision Section begins */
 .aim-section {
     width: 80%;
-    height: 600px;
+    height: 577px;
     margin: 20px auto;
   }
   .aim-section .aim-title {
@@ -380,7 +380,7 @@
   }
   /* media queries for vision section end*/
 
-  @media only screen and (min-width: 600px) and (max-width: 768px) {
+  @media only screen and (min-width: 577px) and (max-width: 768px) {
     .aim-section {
       width: 100%;
       padding: 20px;
@@ -471,7 +471,7 @@
     }
   }
   
-  @media only screen and (min-width: 600px) and (max-width: 768px) {
+  @media only screen and (min-width: 577px) and (max-width: 768px) {
     .aim-section .aim .vision-box {
       position: relative;
       width: 45%;
