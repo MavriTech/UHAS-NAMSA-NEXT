@@ -53,15 +53,13 @@ const Nav = () => {
           </div>
         </div>
         <div className="menu" onClick={navHandler}>
-          <img src="/icons/menu.png" />
-          <img
+        {isVisible ? (<img
             src="/L-images/close.png"
-            alt=""
-            width="20rem"
-            className="close"
-            id="closeIcon"
+            
             // style="display: none"
-          />
+          />):(<img src="/icons/menu.png" />)}
+          
+          
         </div>
       </div>
       {isLargeScreen ? (
