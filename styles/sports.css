@@ -42,8 +42,16 @@ html {
 
 @media only screen and (max-width: 576px) {
   .slide-description {
-    height: 20px;
-    border-radius: 2px;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+
+    height: 35px;
+    width: 35%;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
   }
   .slide-description span {
     font-size: 10px;

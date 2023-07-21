@@ -1,14 +1,63 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import "@styles/admin.css";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const SignInPage = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const router = useRouter();
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handlePasswordChange = (event) => {
+    setPassword(event.target.value);
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    console.log("Email:", email);
+    console.log("Password:", password);
+
+    try {
+      const response = await fetch(
+        "https://uhas-backend.onrender.com/api/admins/login",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email, password }),
+        }
+      );
+
+      if (response.ok) {
+        const data = await response.json();
+        const authToken = data.token;
+
+        // Store the authentication token (e.g., in an HTTP-only cookie or local storage)
+        // For example, using cookies:
+        document.cookie = `authToken=${authToken}; path=/; HttpOnly;`;
+
+        router.push("/admin");
+      } else {
+        console.error("Authentication failed");
+      }
+    } catch (error) {
+      console.error("Error occurred during sign-in:", error);
+    }
+  };
+
   return (
     <div className="sign-wrapper">
       <div className="form-wrapper">
         <div className="form-container">
-          <form action="" className="form">
+          <form action="" className="form" onSubmit={handleSubmit}>
             <div className="sign-options">
               <Link className="sign " href="/admin/signup">
                 Sign Up
@@ -24,7 +73,9 @@ const SignInPage = () => {
                   <input
                     className="admin-input"
                     type="text"
-                    placeholder="Username or email"
+                    placeholder="Email"
+                    value={email}
+                    onChange={handleEmailChange}
                   />
                 </div>
               </div>
@@ -39,6 +90,8 @@ const SignInPage = () => {
                     className="admin-input"
                     type="password"
                     placeholder="Password"
+                    value={password}
+                    onChange={handlePasswordChange}
                   />
                 </div>
                 <Image src="/icons/Eye.png" width={15} height={18} />
