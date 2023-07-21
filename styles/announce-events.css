@@ -18,7 +18,6 @@
   font-weight: 700;
   font-size: 30px;
   text-align: center;
-  line-height: 49px;
   color: #4a6985;
 }
 .notice .events .event-title hr {
@@ -66,7 +65,6 @@
 .event-content .event-date-box .event-date span {
   font-weight: 600;
   font-size: 18px;
-  line-height: 24px;
   color: #ffffff;
 }
 .event-info {
@@ -101,7 +99,6 @@ span {
   font-weight: 700;
   font-size: 30px;
   text-align: center;
-  line-height: 49px;
   color: #4a6985;
 }
 .notice .announcement .announce-header hr {
@@ -126,13 +123,15 @@ span {
 }
 .announcement .announcement-container .announcement-content a {
   font-weight: 600;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 10px;
   color: #000000;
   text-decoration: none;
 }
 .announcement .announcement-container .announcement-content a p{
-  font-size: 11px;
+  font-weight: 600;
+  font-size: 10px;
+  color: #000000;
+  text-decoration: none;
 }
 .announcement .announcement-container .announcement-content a:hover {
   color: #4a6985;
@@ -166,7 +165,6 @@ span {
   .notice .events .event-title h2 {
     font-weight: 700;
     font-size: 20px;
-    line-height: 30px;
   }
   .notice .events .event-title hr {
     width: 200px;
@@ -196,7 +194,6 @@ span {
   }
   .event-content .event-date-box .event-date span {
     font-size: 12px;
-    line-height: 20px;
   }
   .event-container .event-content .event-info {
     margin-top: 5px;
@@ -227,7 +224,6 @@ span {
   .notice .announcement .announce-header h2 {
     font-weight: 700;
     font-size: 20px;
-    line-height: 35px;
   }
   .notice .announcement .announce-header hr {
     width: 200px;
@@ -247,6 +243,10 @@ span {
     font-weight: 600;
     font-size: 10px;
   }
+  .announcement .announcement-container .announcement-content a p{
+    font-weight: 600;
+    font-size: 10px;
+  }
   .announcement .announcement-container .announcement-content hr {
     width: 100%;
     height: 1px;
@@ -256,30 +256,34 @@ span {
 }
 /* media queries for announcement section ends*/
 
-@media only screen and (min-width: 600px) and (max-width: 768px) {
+@media only screen and (min-width: 577px) and (max-width: 768px) {
   .notice {
     width: 90%;
     height: 28rem;
     margin: 0 auto;
   }
+  .notice .events{
+    width: 50%;
+  }
   .notice .events .event-title {
-    width: 300px;
+    width: 100%;
     height: 40px;
     margin-bottom: 10px;
+
   }
   .notice .events .event-title h2 {
     font-weight: 700;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
-    line-height: 39px;
   }
   .notice .events .event-title hr {
-    width: 225px;
-    height: 2px;
+    width: 220px;
+    height: 1px;
   }
   .notice .events .event-container {
-    height: 400px;
+    height: 350px;
     width: 100%;
+
   }
   .events .event-container .event-content {
     width: 100%;
@@ -287,7 +291,6 @@ span {
     margin-bottom: 10px;
   }
   .events .event-content .event-date-box {
-    /* width: 65px; */
     height: 100%;
     margin-top: 40px;
   }
@@ -299,8 +302,7 @@ span {
   }
   .event-content .event-date-box .event-date span {
     font-weight: 600;
-    font-size: 13px;
-    line-height: 10px;
+    font-size: 11px;
   }
   .event-info {
     width: 100%;
@@ -319,39 +321,40 @@ span {
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 768px) {
+@media only screen and (min-width: 577px) and (max-width: 768px) {
   .notice .announcement .announce-header {
-    width: 300px;
+    width: 100%;
     height: 40px;
     margin-bottom: 10px;
   }
   .notice .announcement .announce-header h2 {
     font-weight: 700;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
-    line-height: 39px;
   }
   .notice .announcement .announce-header hr {
     width: 225px;
-    height: 2px;
-    margin-top: -10px;
+    height: 1px;
   }
   .notice .announcement .announcement-container {
-    height: 380px;
+    height: 350px;
     width: 100%;
+
   }
   .announcement .announcement-container .announcement-content {
     width: 100%;
     height: 36px;
     margin: 10px 0;
+    border-bottom: 1px solid black;
+
   }
   .announcement .announcement-container .announcement-content a {
-    font-weight: 600;
-    font-size: 13px;
+    font-weight: 400;
+    font-size: 10px;
   }
   .announcement .announcement-container .announcement-content hr {
     width: 90%;
-    height: 1px;
+    height: 0px;
   }
 }
 
@@ -446,7 +449,7 @@ span {
   }
   .announcement .announcement-container .announcement-content a {
     font-weight: 600;
-    font-size: 13px;
+    font-size: 12px;
   }
   .announcement .announcement-container .announcement-content hr {
     width: 95%;
