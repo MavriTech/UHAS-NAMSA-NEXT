@@ -4,8 +4,7 @@ import Link from "next/link";
 import "@styles/media/header.css";
 
 const MediaHeader = (props) => {
-
-  const { EActiveStyle, PActiveStyle, aActiveStyle} = props;
+  const { EActiveStyle, PActiveStyle, aActiveStyle } = props;
 
   return (
     <div className="media-header-container">
@@ -17,9 +16,7 @@ const MediaHeader = (props) => {
           <Link href="/media/picnic_images">Picnic </Link>
         </span>
         <span className={aActiveStyle}>
-
           <Link href="">Picnic </Link>
-
         </span>
       </div>
     </div>
