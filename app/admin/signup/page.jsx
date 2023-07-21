@@ -52,8 +52,8 @@ const SignInPage = () => {
   return (
     <div className="sign-wrapper">
       <div className="form-wrapper">
-        <div className="form-container">
-          <form action="" className="form" onSubmit={handleSubmit}>
+        <div className="form-container-shadow"> <div className="form-container">
+          <form action="" className="form">
             <div className="sign-options">
               <Link className="sign s-active" href="/admin/signup">
                 Sign Up
@@ -131,7 +131,8 @@ const SignInPage = () => {
             </div>
           </form>
           <Image src="/icons/admin-panel.png" width={350} height={500} />
-        </div>
+        </div></div>
+       
       </div>
     </div>
   );

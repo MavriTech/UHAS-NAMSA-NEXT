@@ -125,17 +125,17 @@ const Picnic_Images = () => {
         style={{ display: file ? "block" : "none" }}
         onClick={() => setFile(null)}
       >
-         <div className="popo">
-        <div className="popup-image">
-          <img src={file?.path} alt="" />
-          <div className="close-icon">
-            <img
-              src="/L-images/close.png"
-              alt=""
-              onClick={() => setFile(null)}
-            />
+        <div className="popo">
+          <div className="popup-image">
+            <img src={file?.path} alt="" />
+            <div className="close-icon">
+              <img
+                src="/L-images/close.png"
+                alt=""
+                onClick={() => setFile(null)}
+              />
+            </div>
           </div>
-        </div>
         </div>
       </div>
     </>
