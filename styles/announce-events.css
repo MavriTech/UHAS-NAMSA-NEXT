@@ -126,10 +126,13 @@ span {
 }
 .announcement .announcement-container .announcement-content a {
   font-weight: 600;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 15px;
   color: #000000;
   text-decoration: none;
+}
+.announcement .announcement-container .announcement-content a p{
+  font-size: 11px;
 }
 .announcement .announcement-container .announcement-content a:hover {
   color: #4a6985;
