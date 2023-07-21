@@ -539,25 +539,34 @@ body {
     border: none;
     width: 90%;
     border-bottom: 1px solid #008800;
+    border-bottom-style: dotted;
+    
   }
   .nav .navlinks .navlink-content:hover {
     background-color: #fff;
+   
   }
   .navbar .nav .navlinks .navlink-content > a {
     margin-left: 7px;
     color: #008800;
     text-decoration: none;
     margin-right: 5px;
+    
   }
   .navbar .nav .navlinks .navlink-content a > i {
     color: #008800;
     font-size: 13px;
+    
+    
   }
   .navbar .nav .navlinks .navlink-content:hover a {
     color: #008800;
+    
+    
   }
   .navbar .nav .navlinks .navlink-content:hover .dropdown a {
-    color: #fff;
+    color: #008800;
+    
   }
   .navbar .nav .navlinks .navlink-content:hover a > i {
     transform: rotate(180deg);
@@ -566,28 +575,33 @@ body {
 
   .navlink-content .dropdown {
     position: static;
-    width: 100%;
+    width: 50%;
   }
 
   .navlink-content .dropdown .dropdown-content {
     width: 100%;
     padding: 10px;
+    background-color: white;
+    
+    
   }
   .navlink-content .dropdown .dropdown-content .dropdown-links {
     border-bottom: 1px solid #e8eaee;
     padding: 5px;
+    
   }
   .navlink-content .dropdown .dropdown-content .dropdown-links a {
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
     text-decoration: none;
-    color: white;
+    color: #008800;
     cursor: pointer;
   }
   .dropdown-links a:hover {
     font-size: 14px;
     transition: 0.5s;
+    
   }
 }
 
