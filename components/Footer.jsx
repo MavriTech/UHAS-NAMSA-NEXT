@@ -68,7 +68,7 @@ const Footer = () => {
             <div className="quick-links">
               <ul>
                 <li>
-                  <a href="#">Feedback</a>
+                  <a href="/resources/wishlist">Feedback</a>
                 </li>
                 <li>
                   <a href="https://www.uhas.edu.gh/en/public/vacancies.html" target="_blank">Vacancies</a>

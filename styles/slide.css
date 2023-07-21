@@ -133,6 +133,7 @@ body {
   align-items: center;
   opacity: 0.95;
   padding: 18px;
+  margin-top: 3rem;
 }
 
 .left-header {
@@ -568,6 +569,7 @@ body {
   }
   .nav-header {
     height: 35px;
+    margin-top: 4rem;
   }
   .share-btn {
     padding: 2px 6px;
@@ -608,6 +610,9 @@ body {
   }
   .slide-pic img {
     height: 150px;
+  }
+  .lessons-container {
+    padding-inline: 12px;
   }
 }
 

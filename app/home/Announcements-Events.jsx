@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 import React, { useEffect, useState } from "react";
 import "@styles/announce-events.css";
 import Link from "next/link";
