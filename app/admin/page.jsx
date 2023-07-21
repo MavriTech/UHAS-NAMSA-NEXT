@@ -23,7 +23,12 @@ const AdminPage = () => {
           </select>
         </div>
 
-        <SlideUploadCont />
+        <SlideUploadCont
+          date="23 JUL"
+          title="DCIT 102 Introduction to Computer Science"
+          session="Session 1"
+          sem="First Semester"
+        />
         <SlideUploadCont />
         <SlideUploadCont />
         <SlideUploadCont />

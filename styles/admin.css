@@ -92,11 +92,19 @@
 }
 
 .date-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #008800;
-  padding: 5px 25px;
+  padding: 5px 35px;
   border-radius: 3px;
   color: #fff;
   font-size: 14px;
+  max-width: 2px;
+  text-align: center;
+}
+
+.date-holder span {
 }
 
 .title-holder {

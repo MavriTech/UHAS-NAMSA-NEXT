@@ -4,7 +4,7 @@ import MediaHeader from "@components/MediaHeader";
 const Media = () => {
   return (
     <>
-      <MediaHeader />
+      <MediaHeader EActiveStyle="c-active" />
     </>
   );
 };
