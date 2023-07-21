@@ -6,7 +6,7 @@ const UploadAnnouncement = () => {
   const [announcementData, setAnnouncementData] = useState({
     title: "",
     description: "",
-    email: "admin1@gmail.com", // Assuming you want to use a fixed email for all announcements
+    email: announcementData.email, // Assuming you want to use a fixed email for all announcements
   });
 
   const handleChange = (e) => {
