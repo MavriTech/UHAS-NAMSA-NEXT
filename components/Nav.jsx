@@ -202,16 +202,16 @@ const Nav = () => {
               <ul className="navlinks">
                 <li className="navlink-content">
                   <a href="/" id="home">
-                    HOME
+                    Home
                   </a>
                 </li>
                 <li className="navlink-content">
-                  <a href="#aim-vision-section">ABOUT US</a>
+                  <a href="#aim-vision-section">About Us</a>
                 </li>
 
                 <li className="navlink-content droplink">
                   <a href="#" id="events">
-                    EVENTS <i className="fa-solid fa-caret-down drop-icon"></i>
+                    Events <i className="fa-solid fa-caret-down drop-icon"></i>
                   </a>
                   <div className="dropdown">
                     <ul className="dropdown-content">
@@ -230,7 +230,7 @@ const Nav = () => {
 
                 <li className="navlink-content droplink">
                   <a href="/resources" id="resources">
-                    RESOURCES
+                    Resources
                     <i className="fa-solid fa-caret-down drop-icon"></i>
                   </a>
                   <div className="dropdown">
@@ -250,7 +250,7 @@ const Nav = () => {
 
                 <li className="navlink-content droplink">
                   <a href="#" id="leadership">
-                    LEADERSHIP
+                    Leadership
                     <i className="fa-solid fa-caret-down drop-icon"></i>
                   </a>
                   <div className="dropdown">
@@ -266,7 +266,7 @@ const Nav = () => {
                 </li>
                 <li className="navlink-content droplink">
                   <a href="#" id="updates">
-                    ADMISSION
+                    Admission
                     <i className="fa-solid fa-caret-down drop-icon"></i>
                   </a>
                   <div className="dropdown">
@@ -300,7 +300,7 @@ const Nav = () => {
                 </li>
                 <li className="navlink-content droplink">
                   <a href="#" id="media">
-                    MEDIA <i className="fa-solid fa-caret-down drop-icon"></i>
+                    Media <i className="fa-solid fa-caret-down drop-icon"></i>
                   </a>
                   <div className="dropdown">
                     <ul className="dropdown-content">
