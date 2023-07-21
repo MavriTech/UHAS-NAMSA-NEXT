@@ -28,10 +28,29 @@ const AdminPage = () => {
           title="DCIT 102 Introduction to Computer Science"
           session="Session 1"
           sem="First Semester"
+          vis={true}
         />
-        <SlideUploadCont />
-        <SlideUploadCont />
-        <SlideUploadCont />
+        <SlideUploadCont
+          date="23 JUL"
+          title="DCIT 102 Introduction to Computer Science"
+          session="Session 1"
+          sem="First Semester"
+          vis={true}
+        />
+        <SlideUploadCont
+          date="23 JUL"
+          title="DCIT 102 Introduction to Computer Science"
+          session="Session 1"
+          sem="First Semester"
+          vis={true}
+        />
+        <SlideUploadCont
+          date="23 JUL"
+          title="DCIT 102 Introduction to Computer Science"
+          session="Session 1"
+          sem="First Semester"
+          vis={true}
+        />
       </div>
 
       <div className="upload-btn">+</div>

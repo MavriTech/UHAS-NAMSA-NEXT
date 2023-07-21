@@ -2,7 +2,13 @@ import React from "react";
 import "@styles/admin.css";
 import Link from "next/link";
 
-const AdminTab = ({ SlideStyleAct, AnStyleAct, ImgStyleAct, header }) => {
+const AdminTab = ({
+  SlideStyleAct,
+  AnStyleAct,
+  EnStyleAct,
+  ImgStyleAct,
+  header,
+}) => {
   return (
     <>
       <div className="tab-container">
@@ -14,6 +20,12 @@ const AdminTab = ({ SlideStyleAct, AnStyleAct, ImgStyleAct, header }) => {
           className={`${AnStyleAct} tab-container-item`}
         >
           ANNOUNCEMENT
+        </Link>
+        <Link
+          href="/admin/events"
+          className={`${EnStyleAct} tab-container-item`}
+        >
+          EVENTS
         </Link>
         <Link
           href="/admin/images"
