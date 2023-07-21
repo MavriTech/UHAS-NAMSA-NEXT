@@ -65,8 +65,13 @@ const Media = () => {
   return (
     <>
       <MediaHeader EActiveStyle="c-active" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
 
 
+>>>>>>> 8d332a6de0fe8b57b029a3a0279ba11111056405
       <div className="image-container">
         {akwaabaImages.map((file, index) => (
           <div
@@ -99,7 +104,11 @@ const Media = () => {
         </div>
         </div>
       </div>
+<<<<<<< HEAD
+>>>>>>> dffa54a5def441c8a8c9d555b52822c77edf77ef
+=======
 
+>>>>>>> 8d332a6de0fe8b57b029a3a0279ba11111056405
     </>
   );
 };
