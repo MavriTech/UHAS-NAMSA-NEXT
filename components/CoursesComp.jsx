@@ -1063,7 +1063,7 @@ const dataSet = [
           },
           {
             id: 2,
-            semTypes: "Second Sem",
+            semTypes: "Second Semester",
             semCourseCodes: [
               {
                 id: 1,
@@ -1171,7 +1171,7 @@ const dataSet = [
           },
           {
             id: 2,
-            semTypes: "Second Sem",
+            semTypes: "Second Semester",
             semCourseCodes: [
               {
                 id: 1,
@@ -1201,12 +1201,12 @@ const dataSet = [
               {
                 id: 6,
                 code: "NURC 108",
-                course: "",
+                course: "Health Promotion",
               },
               {
                 id: 7,
                 code: "NURC 108",
-                course: "Health Promotion",
+                course: "Family Planning",
               },
               {
                 id: 8,
@@ -1223,7 +1223,7 @@ const dataSet = [
         levelSpecifics: [
           {
             id: 1,
-            semTypes: "First Sem",
+            semTypes: "First Semester",
             semCourseCodes: [
               {
                 id: 1,
@@ -1269,7 +1269,7 @@ const dataSet = [
           },
           {
             id: 2,
-            semTypes: "Second Sem",
+            semTypes: "Second Semester",
             semCourseCodes: [
               {
                 id: 1,
