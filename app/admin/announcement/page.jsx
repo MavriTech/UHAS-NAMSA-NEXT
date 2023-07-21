@@ -35,7 +35,7 @@ const UploadAnnouncement = () => {
       setAnnouncementData({
         title: "",
         description: "",
-        email: "admin1@gmail.com",
+        email: announcementData.email,
       });
 
       // Show a success message or perform any other action you want
