@@ -1,14 +1,15 @@
 "use client";
+import React, { useState } from "react";
 import "@styles/admin.css";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import React, { useState } from "react";
 
 const SignInPage = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [err, setErr] = useState(false);
 
   const router = useRouter();
@@ -25,8 +26,19 @@ const SignInPage = () => {
     setPassword(event.target.value);
   };
 
+  const handleConfirmPasswordChange = (event) => {
+    setConfirmPassword(event.target.value);
+  };
+
   const handleSubmit = async (event) => {
     event.preventDefault();
+
+    // Check if passwords match before proceeding
+    if (password !== confirmPassword) {
+      setErr(true);
+      return;
+    }
+
     console.log("Name:", name);
     console.log("Email:", email);
     console.log("Password:", password);
@@ -42,8 +54,12 @@ const SignInPage = () => {
           body: JSON.stringify({ email, name, password }),
         }
       );
-      res.status === 201 &&
+
+      if (res.status === 201) {
         router.push("/admin/signin?success=Account has been created");
+      } else {
+        setErr(true);
+      }
     } catch (err) {
       setErr(true);
     }
@@ -52,87 +68,90 @@ const SignInPage = () => {
   return (
     <div className="sign-wrapper">
       <div className="form-wrapper">
-        <div className="form-container-shadow"> <div className="form-container">
-          <form action="" className="form">
-            <div className="sign-options">
-              <Link className="sign s-active" href="/admin/signup">
-                Sign Up
-              </Link>
-              <Link className="sign" href="/admin/signin">
-                Sign In
-              </Link>
-            </div>
-            <div className="form-below">
-              <div className="input-wrapper">
-                <div className="input-left">
-                  <Image src="/icons/User.png" width={15} height={18} />
-                  <input
-                    className="admin-input"
-                    type="email"
-                    placeholder="Email"
-                    value={email}
-                    onChange={handleEmailChange}
-                  />
-                </div>
+        <div className="form-container-shadow">
+          <div className="form-container">
+            <form onSubmit={handleSubmit} className="form">
+              <div className="sign-options">
+                <Link className="sign s-active" href="/admin/signup">
+                  Sign Up
+                </Link>
+                <Link className="sign" href="/admin/signin">
+                  Sign In
+                </Link>
               </div>
-              <div className="input-wrapper">
-                <div className="input-left">
-                  <Image src="/icons/User2.png" width={15} height={18} />
-                  <input
-                    className="admin-input"
-                    type="text"
-                    placeholder="Username"
-                    value={name}
-                    onChange={handleNameChange}
-                  />
+              <div className="form-below">
+                <div className="input-wrapper">
+                  <div className="input-left">
+                    <Image src="/icons/User.png" width={15} height={18} />
+                    <input
+                      className="admin-input"
+                      type="email"
+                      placeholder="Email"
+                      value={email}
+                      onChange={handleEmailChange}
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="input-wrapper">
-                <div className="input-left">
-                  <Image
-                    src="/icons/Reset-password.png"
-                    width={15}
-                    height={18}
-                  />
-                  <input
-                    className="admin-input"
-                    type="password"
-                    placeholder="Password"
-                    value={password}
-                    onChange={handlePasswordChange}
-                  />
+                <div className="input-wrapper">
+                  <div className="input-left">
+                    <Image src="/icons/User2.png" width={15} height={18} />
+                    <input
+                      className="admin-input"
+                      type="text"
+                      placeholder="Username"
+                      value={name}
+                      onChange={handleNameChange}
+                    />
+                  </div>
                 </div>
-                <Image src="/icons/Eye.png" width={15} height={18} />
-              </div>
-              <div className="input-wrapper">
-                <div className="input-left">
-                  <Image
-                    src="/icons/Reset-password.png"
-                    width={15}
-                    height={18}
-                  />
-                  <input
-                    className="admin-input"
-                    type="password"
-                    placeholder="Confirm password"
-                  />
+                <div className="input-wrapper">
+                  <div className="input-left">
+                    <Image
+                      src="/icons/Reset-password.png"
+                      width={15}
+                      height={18}
+                    />
+                    <input
+                      className="admin-input"
+                      type="password"
+                      placeholder="Password"
+                      value={password}
+                      onChange={handlePasswordChange}
+                    />
+                  </div>
+                  <Image src="/icons/Eye.png" width={15} height={18} />
                 </div>
-                <Image src="/icons/Eye.png" width={15} height={18} />
-              </div>
+                <div className="input-wrapper">
+                  <div className="input-left">
+                    <Image
+                      src="/icons/Reset-password.png"
+                      width={15}
+                      height={18}
+                    />
+                    <input
+                      className="admin-input"
+                      type="password"
+                      placeholder="Confirm password"
+                      value={confirmPassword}
+                      onChange={handleConfirmPasswordChange}
+                    />
+                  </div>
+                  <Image src="/icons/Eye.png" width={15} height={18} />
+                </div>
 
-              <span className="secret-code">
-                Enter secret admin sign up code
-              </span>
-              <input className="secret-input" type="text" />
-              <button type="submit" className="sign-btn">
-                SIGN UP
-              </button>
-              {err && "Something went wrong!"}
-            </div>
-          </form>
-          <Image src="/icons/admin-panel.png" width={350} height={500} />
-        </div></div>
-       
+                <span className="secret-code">
+                  Enter secret admin sign up code
+                </span>
+                <input className="secret-input" type="text" />
+                <button onClick={handleSubmit} type="submit" className="sign-btn">
+                  SIGN UP
+                </button>
+                {err && <span className="error">Something went wrong!</span>}
+              </div>
+            </form>
+            <Image src="/icons/admin-panel.png" width={350} height={500} />
+          </div>
+        </div>
       </div>
     </div>
   );

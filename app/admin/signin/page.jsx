@@ -44,7 +44,7 @@ const SignInPage = () => {
         // For example, using cookies:
         document.cookie = `authToken=${authToken}; path=/; HttpOnly;`;
 
-        router.push("/admin");
+        router.push("/admin/");
       } else {
         console.error("Authentication failed");
       }
@@ -58,7 +58,7 @@ const SignInPage = () => {
       <div className="form-wrapper">
         <div className="form-container-shadow">
           <div className="form-container">
-            <form action="" className="form">
+            <form onSubmit={handleSubmit} className="form">
               <div className="sign-options">
                 <Link className="sign " href="/admin/signup">
                   Sign Up
@@ -75,6 +75,8 @@ const SignInPage = () => {
                       className="admin-input"
                       type="text"
                       placeholder="Username or email"
+                      value={email}
+                      onChange={handleEmailChange}
                     />
                   </div>
                 </div>
@@ -89,6 +91,8 @@ const SignInPage = () => {
                       className="admin-input"
                       type="password"
                       placeholder="Password"
+                      value={password}
+                      onChange={handlePasswordChange}
                     />
                   </div>
                   <Image src="/icons/Eye.png" width={15} height={18} />
@@ -96,7 +100,9 @@ const SignInPage = () => {
 
                 <span className="forgot">Forgot Password?</span>
 
-                <button className="sign-btn">SIGN IN</button>
+                <button type="submit" className="sign-btn">
+                  SIGN IN
+                </button>
 
                 <span className="forgot">
                   Sign in to assume admin privileges
