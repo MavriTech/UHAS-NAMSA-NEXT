@@ -6,7 +6,7 @@ const UploadAnnouncement = () => {
   const [announcementData, setAnnouncementData] = useState({
     title: "",
     description: "",
-    email: announcementData.email, // Assuming you want to use a fixed email for all announcements
+    email: "admin1@gmail.com", // Assuming you want to use a fixed email for all announcements
   });
 
   const handleChange = (e) => {
@@ -19,16 +19,13 @@ const UploadAnnouncement = () => {
 
   const handleSubmit = async () => {
     try {
-      const response = await fetch(
-        "https://uhas-backend.onrender.com/api/announcements",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(announcementData),
-        }
-      );
+      const response = await fetch("https://uhas-backend.onrender.com/api/announcements", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(announcementData),
+      });
 
       if (!response.ok) {
         throw new Error("Failed to post announcement");
@@ -38,7 +35,7 @@ const UploadAnnouncement = () => {
       setAnnouncementData({
         title: "",
         description: "",
-        email: announcementData.email,
+        email: "admin1@gmail.com",
       });
 
       // Show a success message or perform any other action you want
