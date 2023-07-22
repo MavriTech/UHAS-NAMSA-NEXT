@@ -2,7 +2,7 @@
 import AdminTab from "@components/adminTab";
 import React, { useState } from "react";
 
-const EventsPage = () => {
+const UploadEvent = () => {
   const [eventData, setEventData] = useState({
     title: "",
     venue: "",
@@ -92,4 +92,4 @@ const EventsPage = () => {
   );
 };
 
-export default EventsPage;
+export default UploadEvent;

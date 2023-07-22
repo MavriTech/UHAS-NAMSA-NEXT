@@ -310,7 +310,7 @@ const Nav = () => {
                           <a href="#">Entertainment</a>
                         </li>
                         <li className="dropdown-links">
-                          <a href="app/media">Gallery</a>
+                          <a href="/media">Gallery</a>
                         </li>
                       </ul>
                     </div>
