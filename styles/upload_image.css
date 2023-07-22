@@ -1,0 +1,16 @@
+.imager {
+    height: auto; 
+    width: 1800px;
+    display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Display images in three columns */
+  gap: 16px;
+}
+.pictures-holder {
+    height: 280;
+    width: 645px;
+    display: flex;
+    display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Display images in three columns */
+  gap: 16px;
+    
+}

@@ -7,7 +7,7 @@ const UploadEvent = () => {
     title: "",
     venue: "",
     description: "",
-    email: "", // Initialize email as an empty string
+    email: "admin1@gmail.com", // Initialize email as an empty string
   });
 
   const handleChange = (e) => {
@@ -37,7 +37,7 @@ const UploadEvent = () => {
         title: "",
         venue: "",
         description: "",
-        email: eventData.email, // Use eventData.email here to preserve the email value
+        email: "admin1@gmail.com", // Use eventData.email here to preserve the email value
       });
       console.log("Event posted successfully!");
     } catch (error) {
